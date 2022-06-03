@@ -1,13 +1,154 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* ====== COLORS ====== */
+
+:root {
+	--deep-red: #9e2d21;
+  --bright-red: rgb(197, 33, 38);
+  --vermillion: rgb(255, 0, 8);
+  --light-blue: #92e3f6;
+  --white: #FFFFFF;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* === BACKGROUNDS === */
+
+.bg-light-blue {
+  background-color: var(--light-blue);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-bright-red {
+  background-color: var(--bright-red);
+}
+
+.bg-vermillion {
+  background-color: var(--vermillion);
+}
+
+/* === COLORS === */
+
+.bright-red {
+  color: var(--bright-red)
+}
+
+.white {
+  color: var(--white);
+}
+
+/* ====== FONTS ====== */
+
+p {
+	font-family: 'futura', sans-serif;
+	font-size: 1.8rem;
+	color: var(--bright-red);
+	font-style: normal;
+	line-height: 1.3;
+}
+
+h2 {
+	font-family: 'futura', sans-serif;
+	font-style: normal;
+	font-weight: 800;
+	padding: 0;
+	margin: 0;
+	color: rgb(197, 33, 38);
+	font-size: 1.7rem;
+	line-height: 1.3;
+}
+
+h3 {
+  color: var(--bright-red);
+	font-family: 'nasalization', sans-serif;
+  font-size: 1em;
+  margin: 2vH 0vH 2vH 0vH;
+  text-transform: uppercase;
+}
+
+/* === ALIGNMENT === */
+
+.txt-al-right {
+  text-align: right;
+}
+
+/* ====== SPACING ====== */
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.z-index {
+  z-index: 10;
+}
+
+/* === FLEX === */
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.just-center {
+  justify-content: center;
+}
+
+.ac-center {
+  align-content: center;
+}
+.al-center {
+  align-items: center;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+/* === HORIZONTAL === */
+
+.half {
+  width: 50vW;
+}
+
+/* === VERTICAL === */
+
+.full-height {
+  height: 100vH;
+}
+
+.h-one-hundred {
+  height: 100%;
+}
+
+.full-width {
+  width: 100vW;
+}
+
+.w-one-hundred {
+  width: 100%;
+}
+/* ====== SPACING ====== */
+
+.side-padding {
+  padding: 0vH 2vW;
+}
+/* ====== HOME ====== */
+
+.ampersand {
+  width: 10vW;
+}
+
+.left-menu {
+  opacity: 0%;
+}
+
+.left-menu:hover {
+  opacity: 100%;
 }
