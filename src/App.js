@@ -47,8 +47,9 @@ function App() {
       <LeftMenu active={toggleWhiteBackground} opacity={leftOpacity} display={leftDisplay}/>
       <RightMenu active={toggleWhiteBackground} opacity={rightOpacity} display={rightDisplay}/>
       <Routes>
-        <Route path="/ampersand" element={<Ampersand />} />
         <Route path="/" element={<Home redWidth={redBackground} whiteWidth={whiteBackground}/>} />
+        <Route path="/about" element={<About />} />
+        <Route path="/ampersand" element={<Ampersand />} />
       </Routes>
     </Router>
   );

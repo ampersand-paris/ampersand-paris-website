@@ -18,7 +18,6 @@ const RightMenu = (props) => {
             <h2 className="bright-red">fermentorship</h2>
             <h2 className="bright-red">recipes</h2>
             <h2 className="bright-red">writings</h2>
-            <h2 className="bright-red">FAILSPACE</h2>
         </div>
     )
 }

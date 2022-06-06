@@ -12,10 +12,9 @@ const LeftMenu = (props) => {
 
     return (
         <div style={contentStyles} className="z-index h-one-hundred flex column just-center side-padding left-menu bg-bright-red">
+            <h2 className="white">about</h2>
             <h2 className="white">portfolio</h2>
-            <h2 className="white">resume</h2>
-            <h2 className="white">writings</h2>
-            <h2 className="white">FAILSPACE Design Services</h2>
+            <h2 className="white">experience</h2>
         </div>
     )
 }
