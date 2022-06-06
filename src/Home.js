@@ -11,7 +11,7 @@ const Home = (props) => {
                 <img className="ampersand" src="/Images/left-half-ampersand.svg" />
                 <img className="ampersand" src="/Images/right-half-ampersand.svg" />
             </div>
-            <div style={{width: props.whiteWidth}} className="full-height flex bg-white">
+            <div style={{width: props.whiteWidth}} className="full-height flex bg-white transition-duration">
             </div>
       </div>
     )

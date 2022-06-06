@@ -11,10 +11,11 @@ const LeftMenu = (props) => {
     }
 
     return (
-        <div style={contentStyles} className="z-index h-one-hundred flex column just-center side-padding left-menu bg-bright-red">
-            <h2 className="white">about</h2>
-            <h2 className="white">portfolio</h2>
-            <h2 className="white">experience</h2>
+        <div style={contentStyles} className="z-index h-one-hundred flex column just-center side-padding left-menu">
+            <Link to="/about"><h3 className="white menu" onClick={props.active}>about</h3></Link>
+            <h3 className="white menu">skills</h3>
+            <h3 className="white menu">portfolio</h3>
+            <h3 className="white menu">experience</h3>
         </div>
     )
 }
