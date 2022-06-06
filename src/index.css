@@ -54,6 +54,11 @@ p {
 	line-height: 1.3;
 }
 
+h1 {
+	font-family: 'nasalization', sans-serif;
+  font-size: 4em;
+}
+
 h2 {
 	font-family: 'futura', sans-serif;
 	font-style: normal;
@@ -66,12 +71,22 @@ h2 {
 }
 
 h3 {
-  color: var(--bright-red);
 	font-family: 'nasalization', sans-serif;
   font-size: 1em;
-  margin: 2vH 0vH 2vH 0vH;
   text-transform: uppercase;
+  margin: 0 !important;
+  padding: 0 !important;
 }
+
+a:link {
+  text-decoration: none !important;
+}
+
+.sub-title {
+  font-size: 2em;
+  opacity: 80%;
+}
+
 
 /* === ALIGNMENT === */
 
@@ -148,7 +163,7 @@ body {
 }
 
 .text-width {
-  width: 40vW;
+  width: 50vW;
 }
 
 .w-one-hundred {
@@ -168,6 +183,18 @@ body {
   padding: 2vH 1vW;
 }
 
+.no-space {
+  margin: 0;
+  padding: 0;
+}
+
+/* ====== PADDING ====== */
+
+.transition-duration {
+  transition-property: width;
+  transition-duration: 3s;
+}
+
 /* ====== HOME ====== */
 
 .ampersand {
@@ -178,13 +205,15 @@ body {
   position: absolute;
   left: 0%;
   opacity: 0%;
+  width: 20vW;
+
 }
 
 .right-menu {
   position: absolute;
   right: 0%;
   opacity: 0%;
-  width: 25vW;
+  width: 20vW;
 }
 
 .right-menu:hover {

@@ -12,12 +12,12 @@ const RightMenu = (props) => {
     }
     
     return (
-        <div style={contentStyles} className="z-index  h-one-hundred flex column just-center side-padding right-menu bg-white">
-            <Link to="/ampersand"><h2 onClick={props.active} className="bright-red">ampersand</h2></Link>
-            <h2 className="bright-red">fermentation CSA</h2>
-            <h2 className="bright-red">fermentorship</h2>
-            <h2 className="bright-red">recipes</h2>
-            <h2 className="bright-red">writings</h2>
+        <div style={contentStyles} className="z-index  h-one-hundred flex column just-center side-padding right-menu txt-al-right">
+            <Link to="/ampersand"><h3 onClick={props.active} className="bright-red menu">ampersand</h3></Link>   
+            <h3 className="bright-red menu">fermentation CSA</h3>
+            <h3 className="bright-red menu">fermentorship</h3>
+            <h3 className="bright-red menu">recipes</h3>
+            <h3 className="bright-red menu">writings</h3>
         </div>
     )
 }
