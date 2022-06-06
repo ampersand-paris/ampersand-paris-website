@@ -1,34 +1,57 @@
-import Footer from './Footer'
+import { BrowserRouter as Router,
+  Routes,
+  Route,
+  Link } from "react-router-dom";
+import { useState } from "react";
+
+/* === Components === */
+import Footer from './Footer';
+import Ampersand from './Ampersand/Ampersand'
+import LeftMenu from './Menus/LeftMenu'
+import RightMenu from "./Menus/RightMenu";
+import Home from "./Home";
 
 function App() {
+  const [whiteBackground, setWhiteBackground] = useState('50vW');  
+  const [redBackground, setRedBackground] = useState('50vW');  
+
+  const[rightOpacity, setRightOpacity] = useState('');
+  const[leftOpacity, setLeftOpacity] = useState('');
+  const[rightDisplay, setRightDisplay] = useState('flex');
+  const[leftDisplay, setLeftDisplay] = useState('flex')
+
+  const toggleWhiteBackground = () => {
+    setWhiteBackground('25vW')
+    setRedBackground('0vW')
+    setRightOpacity('100%')
+    setLeftDisplay('none')
+  }
+
+  const toggleRedBackground = () => {
+    setRedBackground('100vW')
+    setWhiteBackground('0vW')
+    setLeftOpacity('100%')
+    setRightDisplay('none')
+  }
+
+  function reducer (state, action) {
+    if (action === 'rightMenu'){
+      
+    } else if (action === 'leftMenu'){
+      
+    }
+  }
+
   return (
-    <>
-      <div className="flex">
-        <div className="half full-height flex bg-bright-red">
-          <div className="z-index half h-one-hundred flex column just-center side-padding left-menu bg-bright-red">
-            <h2 className="white">fermentation CSA</h2>
-            <h2 className="white">fermentorship</h2>
-            <h2 className="white">recipes</h2>
-            <h2 className="white">writings</h2>
-            <h2 className="white">FAILSPACE</h2>
-          </div>
-        </div>
-        <div className="full-height full-width flex just-center absolute">
-          <img className="ampersand" src="/Images/left-half-ampersand.svg" />
-          <img className="ampersand" src="/Images/right-half-ampersand.svg" />
-        </div>
-        <div className="half full-height flex al-center flex-end txt-al-right bg-white">
-          <div className="z-index half h-one-hundred flex column just-center side-padding left-menu bg-white">
-            <h2 className="bright-red">portfolio</h2>
-            <h2 className="bright-red">resume</h2>
-            <h2 className="bright-red"></h2>
-            <h2 className="bright-red">writings</h2>
-            <h2 className="bright-red">FAILSPACE Design Services</h2>
-          </div>
-        </div>
-      </div>
-      <Footer />
-    </>
+    <Router>
+      <LeftMenu active={toggleWhiteBackground} opacity={leftOpacity} display={leftDisplay}/>
+      <RightMenu active={toggleWhiteBackground} opacity={rightOpacity} display={rightDisplay}/>
+      <Routes>
+        <Route path="/" element={<Home redWidth={redBackground} whiteWidth={whiteBackground}/>} />
+        <Route path="/about" element={<About />} />
+        <Route path="/ampersand" element={<Ampersand />} />
+      </Routes>
+    </Router>
   );
 }
 
