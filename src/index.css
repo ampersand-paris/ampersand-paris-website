@@ -105,6 +105,9 @@ body {
   position: absolute;
 }
 
+.fixed {
+  position: fixed;
+}
 .relative {
   position: relative;
 }
@@ -202,17 +205,17 @@ body {
 }
 
 .left-menu {
-  position: absolute;
+  position: fixed;
   left: 0%;
-  opacity: 0%;
+  opacity: 100%;
   width: 20vW;
 
 }
 
 .right-menu {
-  position: absolute;
+  position: fixed;
   right: 0%;
-  opacity: 0%;
+  opacity: 100%;
   width: 20vW;
 }
 

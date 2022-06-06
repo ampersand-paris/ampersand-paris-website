@@ -6,11 +6,12 @@ import { useState } from "react";
 
 /* === Components === */
 import Footer from './Footer';
-import Ampersand from './Ampersand/Ampersand'
+import Ampersand from './Ampersand/Components/Ampersand'
 import LeftMenu from './Menus/LeftMenu'
 import RightMenu from "./Menus/RightMenu";
 import Home from "./Home";
-import Coding from "./Portfolio/Coding"
+import Coding from "./Portfolio/Coding";
+import Performance from "./Ampersand/Performance";
 
 function App() {
   const [whiteBackground, setWhiteBackground] = useState('50vW');  
@@ -50,7 +51,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home redWidth={redBackground} whiteWidth={whiteBackground}/>} />
         <Route path="/about" element={<Coding />} />
-        <Route path="/ampersand" element={<Ampersand />} />
+        <Route path="/ampersand" element={<Performance />} />
       </Routes>
     </Router>
   );
