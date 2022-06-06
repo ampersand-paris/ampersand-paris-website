@@ -7,54 +7,48 @@ import { useState } from "react";
 /* === Components === */
 import Footer from './Footer';
 import Ampersand from './Ampersand/Ampersand'
+import LeftMenu from './Menus/LeftMenu'
+import RightMenu from "./Menus/RightMenu";
+import Home from "./Home";
 
 function App() {
   const [whiteBackground, setWhiteBackground] = useState('50vW');  
   const [redBackground, setRedBackground] = useState('50vW');  
 
-  const [ampersand, setAmpersand] = useState('none')
+  const[rightOpacity, setRightOpacity] = useState('');
+  const[leftOpacity, setLeftOpacity] = useState('');
+  const[rightDisplay, setRightDisplay] = useState('flex');
+  const[leftDisplay, setLeftDisplay] = useState('flex')
 
   const toggleWhiteBackground = () => {
-    setWhiteBackground('100vW')
+    setWhiteBackground('25vW')
     setRedBackground('0vW')
+    setRightOpacity('100%')
+    setLeftDisplay('none')
   }
 
-  const toggleAmpersand = () => {
-    setAmpersand('flex')
+  const toggleRedBackground = () => {
+    setRedBackground('100vW')
+    setWhiteBackground('0vW')
+    setLeftOpacity('100%')
+    setRightDisplay('none')
   }
 
+  function reducer (state, action) {
+    if (action === 'rightMenu'){
+      
+    } else if (action === 'leftMenu'){
+      
+    }
+  }
 
   return (
     <Router>
-      <div className="flex">
-        <div style={{width: redBackground}} className="full-height flex bg-bright-red">
-          <div style={{width: redBackground}} className="z-index h-one-hundred flex column just-center side-padding left-menu bg-bright-red">
-            <h2 className="white">portfolio</h2>
-            <h2 className="white">resume</h2>
-            <h2 className="white"></h2>
-            <h2 className="white">writings</h2>
-            <h2 className="white">FAILSPACE Design Services</h2>
-          </div>
-        </div>
-        <div className="full-height full-width flex just-center absolute">
-          <img className="ampersand" src="/Images/left-half-ampersand.svg" />
-          <img className="ampersand" src="/Images/right-half-ampersand.svg" />
-        </div>
-        <div style={{width: whiteBackground}} className="full-height flex al-center flex-end txt-al-right bg-white">
-          <Ampersand active={ampersand}/>
-          <div style={{width: whiteBackground}} className="z-index  h-one-hundred flex column just-center side-padding left-menu bg-white">
-            <Link to="/ampersand"><h2 onClick={() => {toggleWhiteBackground(); toggleAmpersand()}} className="bright-red">ampersand</h2></Link>
-            <h2 className="bright-red">fermentation CSA</h2>
-            <h2 className="bright-red">fermentorship</h2>
-            <h2 className="bright-red">recipes</h2>
-            <h2 className="bright-red">writings</h2>
-            <h2 className="bright-red">FAILSPACE</h2>
-          </div>
-        </div>
-      </div>
-      <Footer />
+      <LeftMenu active={toggleWhiteBackground} opacity={leftOpacity} display={leftDisplay}/>
+      <RightMenu active={toggleWhiteBackground} opacity={rightOpacity} display={rightDisplay}/>
       <Routes>
-        <Route path="/ampersand" element={<Ampersand active={ampersand} />} />
+        <Route path="/ampersand" element={<Ampersand />} />
+        <Route path="/" element={<Home redWidth={redBackground} whiteWidth={whiteBackground}/>} />
       </Routes>
     </Router>
   );
