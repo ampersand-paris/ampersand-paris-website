@@ -4,10 +4,10 @@ import React from "react";
 const Ampersand = () => {
 
     return (
-    <div class="stnd-padding flex column al-center just-center">
+    <div class="stnd-padding full-height flex column al-center just-center">
 	    <div class="red-border border-radius text-padding text-width">
             <h1 className="bright-red no-space">&</h1>
-            <h1 className="bright-red sub-title no-space no-space">Mother of Microbes</h1>
+            <h1 className="bright-red sub-title no-space">Mother of Microbes</h1>
             {/* <div className="flex just-center">
                 <img className="portrait " src="./Images/ampersand-portrait.JPG" />
                 <div className="relative flex flex-end">
