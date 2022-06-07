@@ -8,12 +8,12 @@ import Projects from "./Components/Projects";
 import Recipes from "./Components/Recipes";
 import Writings from "./Components/Writings";
 
-const Performance = () => {
+const Performance = (props) => {
 
     return (
         <>
             <div className="full-height full-width flex flex-start al-center absolute">
-                <Link className="ampersand fixed" to="/"><img  src="/Images/right-half-ampersand.svg" /></Link>
+                <Link onClick={props.active} className="ampersand fixed" to="/"><img src="/Images/right-half-ampersand.svg" /></Link>
             </div>
             <div class="stnd-padding flex column al-center just-center">
                 <Ampersand />

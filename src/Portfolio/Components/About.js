@@ -4,7 +4,7 @@ import React from "react";
 const About = () => {
 
     return (
-    <div class="stnd-padding flex column al-center just-center bg-bright-red">
+    <div class="stnd-padding full-height flex column al-center just-center bg-bright-red">
 	    <div class="red-border border-radius text-padding text-width">
             <p className="white no-space">Hello, my name is</p>
             <h1 className="white no-space">Ampersand Paris.</h1>

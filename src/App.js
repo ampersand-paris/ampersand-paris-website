@@ -22,18 +22,20 @@ function App() {
   const[rightDisplay, setRightDisplay] = useState('flex');
   const[leftDisplay, setLeftDisplay] = useState('flex')
 
-  const toggleWhiteBackground = () => {
-    setWhiteBackground('25vW')
-    setRedBackground('0vW')
-    setRightOpacity('100%')
-    setLeftDisplay('none')
+  const toggleLeftMenu = () => {
+    if (leftDisplay === 'flex' && rightDisplay === 'flex') {
+      setRightDisplay('none')
+    } else if (leftDisplay === 'flex' && rightDisplay === 'none') {
+      setRightDisplay('flex')
+    }
   }
 
-  const toggleRedBackground = () => {
-    setRedBackground('25vW')
-    setWhiteBackground('0vW')
-    setLeftOpacity('100%')
-    setRightDisplay('none')
+  const toggleRightMenu = () => {
+    if (leftDisplay === 'flex' && rightDisplay === 'flex') {
+      setLeftDisplay('none')
+    } else if (leftDisplay === 'none' && rightDisplay === 'flex') {
+      setLeftDisplay('flex')
+    }
   }
 
   function reducer (state, action) {
@@ -46,12 +48,12 @@ function App() {
 
   return (
     <Router>
-      <LeftMenu active={toggleRedBackground} opacity={leftOpacity} display={leftDisplay}/>
-      <RightMenu active={toggleWhiteBackground} opacity={rightOpacity} display={rightDisplay}/>
+      <LeftMenu active={toggleLeftMenu} opacity={leftOpacity} display={leftDisplay}/>
+      <RightMenu active={toggleRightMenu} opacity={rightOpacity} display={rightDisplay}/>
       <Routes>
         <Route path="/" element={<Home redWidth={redBackground} whiteWidth={whiteBackground}/>} />
-        <Route path="/about" element={<Coding />} />
-        <Route path="/ampersand" element={<Performance />} />
+        <Route path="/about" element={<Coding active={toggleLeftMenu}/>} />
+        <Route path="/ampersand" element={<Performance active={toggleRightMenu}/>} />
       </Routes>
     </Router>
   );
