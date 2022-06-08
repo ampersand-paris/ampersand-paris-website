@@ -112,6 +112,10 @@ a:link {
   text-align: right;
 }
 
+.txt-al-left {
+  text-align: left;
+}
+
 /* ====== SPACING ====== */
 
 body {
@@ -241,6 +245,10 @@ body {
   padding: 1vH 1vW 1vH 0vW;
 }
 
+.top-padding {
+  margin-top: 40vH;
+}
+
 /* ====== ANIMATIONS ====== */
 
 .transition-duration {
@@ -352,6 +360,9 @@ body {
   right: 0%;
 }
 
+.left {
+  left: 0%;
+}
 .icon {
   width: 30px;
 }
