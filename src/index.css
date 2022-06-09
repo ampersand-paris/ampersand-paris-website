@@ -3,7 +3,8 @@
 :root {
 	--deep-red: #9e2d21;
   --bright-red: rgb(197, 33, 38);
-  --vermillion: rgb(255, 0, 8);
+  --bright-red-op: rgba(197, 33, 39, 0.80);
+  --vermillion: #ff0008;
   --light-blue: #92e3f6;
   --white: #FFFFFF;
 }
@@ -36,6 +37,9 @@
   color: var(--white);
 }
 
+.vermillion {
+  color: var(--vermillion)
+}
 /* === BORDERS === */
 
 .border-radius {
@@ -48,6 +52,11 @@
 .white-border {
   border: 1px solid var(--white)
 }
+
+.border-right {
+  border-right: 2px solid var(--bright-red-op);
+}
+
 /* ====== FONTS ====== */
 
 p {
@@ -188,6 +197,10 @@ body {
   width: 75vW;
 }
 
+.seventy-percent {
+  width: 75%;
+}
+
 .sixty {
   width: 65vW;
 }
@@ -196,6 +209,13 @@ body {
   width: 50%;
 }
 
+.thirty-percent {
+  width: 30%;
+}
+
+.twenty {
+  width: 15vW;
+}
 .text-width {
   width: 50vW;
 }
@@ -220,6 +240,10 @@ body {
 .no-space {
   margin: 0;
   padding: 0;
+}
+
+.no-margin {
+  margin: 0;
 }
 
 .no-top-space {
@@ -252,6 +276,10 @@ body {
 
 .top-padding {
   margin-top: 40vH;
+}
+
+.tab-padding {
+  padding: 2vH 0vW;
 }
 
 /* ====== ANIMATIONS ====== */
@@ -372,3 +400,17 @@ body {
   width: 30px;
 }
 
+/* ====== EXPERIENCE ====== */
+
+.tab:hover {
+  border-right: 2px solid var(--vermillion)
+}
+
+.triangle {
+  width: 20px;
+  height: 30px;
+}
+
+.experience-width {
+  width: calc();
+}
