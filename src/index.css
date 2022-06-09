@@ -97,6 +97,10 @@ a:link {
   font-size: 2em;
 }
 
+.portfolio-title {
+  font-size: 1.5em;
+}
+
 .opacity-80 {
   opacity: 80%;
 }
@@ -106,6 +110,10 @@ a:link {
 
 .txt-al-right {
   text-align: right;
+}
+
+.txt-al-left {
+  text-align: left;
 }
 
 /* ====== SPACING ====== */
@@ -122,12 +130,13 @@ body {
 .fixed {
   position: fixed;
 }
+
 .relative {
   position: relative;
 }
 
 .z-index {
-  z-index: 10;
+  z-index: 999 !important;
 }
 
 /* === FLEX === */
@@ -179,6 +188,10 @@ body {
   width: 75vW;
 }
 
+.sixty {
+  width: 65vW;
+}
+
 .fifty-percent {
   width: 50%;
 }
@@ -214,7 +227,34 @@ body {
   padding-top: 0;
 }
 
-/* ====== PADDING ====== */
+.tech-padding {
+  padding: 0vH 2vW;
+  margin: 1vH 0vW;
+}
+
+.tech-padding-first {
+  padding: 0vH 2vW 0vH 0vW;
+  margin: 1vH 0vW;
+}
+
+.tech-padding-first-reverse {
+  padding: 0vH 0vW 0vH 2vW;
+  margin: 1vH 0vW;
+}
+
+.icon-padding {
+  padding: 1vH 1vW;
+}
+
+.icon-padding-first {
+  padding: 1vH 1vW 1vH 0vW;
+}
+
+.top-padding {
+  margin-top: 40vH;
+}
+
+/* ====== ANIMATIONS ====== */
 
 .transition-duration {
   transition-property: width;
@@ -262,3 +302,73 @@ body {
   width: 25vW;
   border-radius: 30px;
 }
+
+/* ====== PORTFOLIO ====== */
+
+.portfolio-image {
+  border-radius: 10px;
+  top: 0;
+  width: 40vW;
+  height: 23vW;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@keyframes portfolio {
+  0% {
+    background-color: var(--light-blue);
+    opacity: 70%;
+  }
+  25% {
+    background-color: var(--bright-red);
+  }
+  100%{
+    opacity: 0%;
+  }
+}
+
+@keyframes portfolioOut {
+  0% {
+    opacity: 0%;
+    
+  }
+  100%{
+    background-color: var(--light-blue);
+    opacity: 70%;
+  }
+}
+
+.portfolio-image-overlay {
+  background-color: var(--light-blue);
+  border-radius: 10px;
+  height: 100%;
+  opacity: 70%;
+  width: 40vW;
+  -webkit-animation: portfolioOut .5s forwards;
+  -moz-animation: portfolioOut .5s forwards;
+  -o-animation: portfolioOut .5s forwards;
+  animation: portfolioOut .5s forwards;
+}
+
+.portfolio-image-overlay:hover {
+  -webkit-animation: portfolio 1s forwards;
+  -moz-animation: portfolio 1s forwards;
+  -o-animation: portfolio 1s forwards;
+  animation: portfolio 1s forwards;
+}
+
+.portfolio-text {
+  width: 40vW
+}
+
+.right {
+  right: 0%;
+}
+
+.left {
+  left: 0%;
+}
+.icon {
+  width: 30px;
+}
+
