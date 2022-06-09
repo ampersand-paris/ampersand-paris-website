@@ -237,6 +237,11 @@ body {
   margin: 1vH 0vW;
 }
 
+.tech-padding-first-reverse {
+  padding: 0vH 0vW 0vH 2vW;
+  margin: 1vH 0vW;
+}
+
 .icon-padding {
   padding: 1vH 1vW;
 }
