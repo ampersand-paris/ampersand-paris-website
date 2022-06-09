@@ -1,9 +1,13 @@
 import React from "react";
 
-const FSDS = () => {
+const FSDS = (props) => {
+
+    const contentStyles = {
+        display: props.active
+    }
 
     return (
-    <div>
+    <div style={contentStyles} className="column">
         <h3 className="vermillion">Web Developer and Design Partner</h3>
         <ul>
             <li className="vermillion">Founded a web development and graphic design studio whose profits support performing artists in New York City</li>

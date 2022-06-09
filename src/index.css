@@ -54,7 +54,7 @@
 }
 
 .border-right {
-  border-right: 2px solid var(--bright-red-op);
+  border-right: 2px solid var(--vermillion);
 }
 
 /* ====== FONTS ====== */
@@ -403,7 +403,7 @@ body {
 /* ====== EXPERIENCE ====== */
 
 .tab:hover {
-  border-right: 2px solid var(--vermillion)
+  border-right: 2px solid var(--light-blue)
 }
 
 .triangle {
@@ -413,4 +413,8 @@ body {
 
 .experience-width {
   width: calc();
+}
+
+.experience-height {
+  min-height: 50vH;
 }
