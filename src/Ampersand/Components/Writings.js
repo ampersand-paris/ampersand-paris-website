@@ -1,9 +1,12 @@
 const Writings = () => {
 
     return (
-    <div class="stnd-padding flex column al-center just-center">
-	    <h1>Writings</h1>
-    </div>
+        <>   
+            <a id="writings"></a> 
+            <div class="stnd-padding flex column al-center just-center">
+	            <h1>Writings</h1>
+            </div>
+        </>
     )
 }
 

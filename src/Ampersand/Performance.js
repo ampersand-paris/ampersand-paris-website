@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 /* === React Components === */
 import Ampersand from "./Components/Ampersand";
@@ -10,6 +11,21 @@ import Writings from "./Components/Writings";
 
 const Performance = (props) => {
 
+    useEffect(() => {
+        if(window.location.href === "http://localhost:3000/ampersand#CSA") {
+            document.getElementById("CSA").scrollIntoView({ behavior: 'smooth' });
+        }
+        if(window.location.href === "http://localhost:3000/ampersand#recipes") {
+            document.getElementById("recipes").scrollIntoView({ behavior: 'smooth' });
+        }
+        if(window.location.href === "http://localhost:3000/ampersand#projects") {
+            document.getElementById("projects").scrollIntoView({ behavior: 'smooth' });
+        }
+        if(window.location.href === "http://localhost:3000/ampersand#writings") {
+            document.getElementById("writings").scrollIntoView({ behavior: 'smooth' });
+        }
+    }  
+    )
     return (
         <>
             <div className="full-height full-width flex flex-start al-center absolute">
