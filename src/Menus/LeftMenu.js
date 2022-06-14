@@ -10,12 +10,48 @@ const LeftMenu = (props) => {
         opacity: (props.opacity)
     }
 
+    const scrollAbout = () => {
+        if (window.location.href === "http://localhost:3000/") {
+            window.location.href = "http://localhost:3000/about"
+        } else {
+            const element = document.getElementById("about");
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    
+    const scrollSkills = () => {
+        if (window.location.href === "http://localhost:3000/") {
+            window.location.href = "http://localhost:3000/about#skills"
+        } else {
+            const element = document.getElementById("skills");
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+    const scrollPortfolio = () => {
+        if (window.location.href === "http://localhost:3000/") {
+            window.location.href = "http://localhost:3000/about#portfolio"
+        } else {
+            const element = document.getElementById("portfolio");
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+    const scrollExperience = () => {
+        if (window.location.href === "http://localhost:3000/") {
+            window.location.href = "http://localhost:3000/about#experience"
+        } else {
+            const element = document.getElementById("experience");
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
     return (
         <div style={contentStyles} className="z-index h-one-hundred flex column just-center side-padding left-menu">
-            <Link to="/about"><h3 className="white menu" onClick={props.active}>about</h3></Link>
-            <h3 className="white menu">skills</h3>
-            <h3 className="white menu">portfolio</h3>
-            <h3 className="white menu">experience</h3>
+            <h3 onClick={scrollAbout} className="white menu">about</h3>
+            <h3 onClick={scrollSkills} className="white menu">skills</h3>
+            <h3 onClick={scrollPortfolio} className="white menu">portfolio</h3>
+            <h3 onClick={scrollExperience} className="white menu">experience</h3>
         </div>
     )
 }
