@@ -22,7 +22,7 @@ const RightMenu = (props) => {
     
     const scrollCSA = () => {
         if (window.location.href === "http://localhost:3000/") {
-            window.location.href = "http://localhost:3000/about#CSA"
+            window.location.href = "http://localhost:3000/ampersand#CSA"
         } else {
             const element = document.getElementById("CSA");
             element.scrollIntoView({ behavior: 'smooth' });
@@ -31,7 +31,7 @@ const RightMenu = (props) => {
 
     const scrollProjects = () => {
         if (window.location.href === "http://localhost:3000/") {
-            window.location.href = "http://localhost:3000/about#projects"
+            window.location.href = "http://localhost:3000/ampersand#projects"
         } else {
             const element = document.getElementById("projects");
             element.scrollIntoView({ behavior: 'smooth' });
@@ -40,7 +40,7 @@ const RightMenu = (props) => {
 
     const scrollRecipes = () => {
         if (window.location.href === "http://localhost:3000/") {
-            window.location.href = "http://localhost:3000/about#recipes"
+            window.location.href = "http://localhost:3000/ampersand#recipes"
         } else {
             const element = document.getElementById("recipes");
             element.scrollIntoView({ behavior: 'smooth' });
@@ -49,7 +49,7 @@ const RightMenu = (props) => {
 
     const scrollWritings = () => {
         if (window.location.href === "http://localhost:3000/") {
-            window.location.href = "http://localhost:3000/about#writings"
+            window.location.href = "http://localhost:3000/ampersand#writings"
         } else {
             const element = document.getElementById("writings");
             element.scrollIntoView({ behavior: 'smooth' });
