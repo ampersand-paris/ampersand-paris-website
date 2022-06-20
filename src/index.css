@@ -2,7 +2,7 @@
 
 :root {
 	--deep-red: #9e2d21;
-  --bright-red: rgb(197, 33, 38);
+  --bright-red: #c52126;
   --bright-red-op: rgba(197, 33, 39, 0.80);
   --vermillion: #ff0008;
   --light-blue: #92e3f6;
@@ -25,6 +25,10 @@
 
 .bg-vermillion {
   background-color: var(--vermillion);
+}
+
+.bg-center {
+  background-position: center;
 }
 
 /* === COLORS === */
@@ -237,6 +241,10 @@ body {
   padding: 2vH 1vW;
 }
 
+.footer-padding {
+  padding: 5vH 0vW;
+}
+
 .no-space {
   margin: 0;
   padding: 0;
@@ -396,8 +404,13 @@ body {
 .left {
   left: 0%;
 }
+
 .icon {
   width: 30px;
+}
+
+.icon-footer{
+  width: 50px;
 }
 
 /* ====== EXPERIENCE ====== */

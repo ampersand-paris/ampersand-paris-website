@@ -4,8 +4,14 @@ import React from "react";
 const Footer = () => {
 
     return (
-        <div className="bg-vermillion flex just-center no-margin side-padding">
-            <h2 className="white">This is the footer.</h2>
+        <div className="bg-vermillion flex column al-center footer-padding side-padding">
+            <div className="flex just-center al-center">
+                <a href="mailto:ampersand.s.paris@gmail.com"><img className="icon-footer icon-padding" src="./Images/MailWhite.svg" /></a>
+                <a href="https://instagram.com/ampersandparis"><img className="icon-footer icon-padding" src="./Images/Instagram_Glyph_White.png" /></a>
+                <a href="https://github.com/ampersand-paris"><img className="icon-footer icon-padding" src="./Images/GitHub.png" /></a>
+                <a href="https://linkedin.com/ampersand-paris"><img className="icon-footer icon-padding" src="./Images/LinkedInWhite.svg" /></a>
+            </div>
+            <p className="white">Designed and Developed by Ampersand Paris</p>
         </div>
     )
 }
