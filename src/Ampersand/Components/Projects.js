@@ -8,7 +8,7 @@ const Fermentorship = () => {
 
     return (
         <div className="stnd-padding flex column al-center just-center">
-            <a id="portfolio"></a>
+            <a id="projects"></a>
             <div className="text-padding seventy-five">
                 <h1 className="bright-red no-space">Projects</h1>
             </div>   
@@ -22,8 +22,8 @@ const Fermentorship = () => {
                         <p className="tech-padding-first">Recipe Development</p>
                     </div>
                     <div className="flex no-space">
-                        <a href="https://www.kickstarter.com/projects/youcancook/you-can-cook-literally-anything"><img className="icon icon-padding" src="./Images/ExternalLink.png" /></a>
-                        <a href="https://www.instagram.com/youcancookliterallyanything/"><img className="icon icon-padding-first" src="./Images/GitHub.png" /></a>
+                        <a href="https://www.kickstarter.com/projects/youcancook/you-can-cook-literally-anything"><img className="icon icon-padding" src="./Images/BrightRedExternalLink.svg" /></a>
+                        <a href="https://www.instagram.com/youcancookliterallyanything/"><img className="icon icon-padding-first" src="./Images/BrightRedInstagram.svg" /></a>
                     </div>
                 </div>
                 <div style={{ backgroundImage: `url(${YCCLABackground})` }} className="portfolio-image absolute right" id="failspace">
