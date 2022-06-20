@@ -84,9 +84,9 @@ h1 {
 }
 
 h2 {
-	font-family: 'futura', sans-serif;
+	font-family: 'futura-pt', sans-serif;
 	font-style: normal;
-	font-weight: 800;
+	font-weight: 600;
 	padding: 0;
 	margin: 0;
 	color: rgb(197, 33, 38);
@@ -118,6 +118,10 @@ a:link {
   opacity: 80%;
 }
 
+.uppercase {
+  text-transform: uppercase;
+  font-weight: 600 !important;
+}
 
 /* === ALIGNMENT === */
 
@@ -177,6 +181,10 @@ body {
   justify-content: flex-end;
 }
 
+.space-btwn {
+  justify-content: space-between;
+}
+
 /* === HORIZONTAL === */
 
 .half {
@@ -191,6 +199,10 @@ body {
 
 .h-one-hundred {
   height: 100%;
+}
+
+.w-one-hundred {
+  width: 100%;
 }
 
 .full-width {
@@ -224,9 +236,6 @@ body {
   width: 50vW;
 }
 
-.w-one-hundred {
-  width: 100%;
-}
 /* ====== PADDING ====== */
 
 .side-padding {
