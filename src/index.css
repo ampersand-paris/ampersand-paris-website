@@ -27,6 +27,10 @@
   background-color: var(--vermillion);
 }
 
+.bg-center {
+  background-position: center;
+}
+
 /* === COLORS === */
 
 .bright-red {

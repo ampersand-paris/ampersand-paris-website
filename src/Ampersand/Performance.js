@@ -36,7 +36,6 @@ const Performance = (props) => {
                 <FermentationCSA />
                 <Projects />
                 <Recipes />
-                <Writings />
             </div>
         </>
     )
