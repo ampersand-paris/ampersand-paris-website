@@ -36,7 +36,7 @@ const FennelFullDish = (props) => {
             </div>
             <div>
                 <div className="flex flex-end">
-                    <div class="seventy-percent">
+                    <div className="seventy-percent">
                         <h3>ingredients</h3>
                         <ul>
                             <li>1 medium onion diced</li>
@@ -54,7 +54,7 @@ const FennelFullDish = (props) => {
                     </div>
                 </div>
                 <div className="flex flex-end">
-                    <div class="seventy-percent">
+                    <div className="seventy-percent">
                         <h3>preparation</h3>
                         <p>1.  In a large bowl, cover the beans with water seasoned with salt and soak for at least six hours, preferably overnight.</p>
                         <p>2. Heat olive oil over medium heat in a large pot and add the onions and celery. Season with salt and cook until onions are translucent and tender. Add the garlic and cook for an additional minute. Add the beans and the water they are soaking in as well as the remaining quart of liquid. Bring to a boil and reduce to a simmer. Cook until tender, about 30 minutes to an hour depending on the freshness and size of the beans.</p>

@@ -26,11 +26,12 @@ const MidProcess = (props) => {
                 <h1 className="bright-red sub-title">C</h1>
                 <h1 className="bright-red sub-title">H</h1>
             </div>
-            <div>
-                <h2 className="uppercase">pickled fennel stalks and kumquats over white beans, fennel, blood orange, and 
-            kalamata olives</h2>
-                <p>Serves: 6</p><p>
-                </p><p>Active Prep: 1 hr and 30 minutes</p> 
+            <div className="height-150px flex column space-btwn red-border-bottom">
+                <h2 className="uppercase">pickled fennel stalks and kumquats over white beans, fennel, blood orange, and kalamata olives</h2>
+                <div>
+                    <p className="no-space">Serves: 6</p>
+                    <p className="no-space">Active Prep: 1 hr and 30 minutes</p> 
+                </div>
             </div>
             <div class="recipe-body">
                 <div class="ingredients">

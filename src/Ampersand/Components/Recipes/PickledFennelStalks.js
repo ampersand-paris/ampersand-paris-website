@@ -35,7 +35,7 @@ const PickledFennelStalks = (props) => {
             </div>
             <div>
                 <div className="flex flex-end">
-                    <div class="seventy-percent">
+                    <div className="seventy-percent">
                         <h3>ingredients</h3>
                         <div class="flex space-btwn">
                             <ul>
@@ -65,14 +65,14 @@ const PickledFennelStalks = (props) => {
                     </div>
                 </div>
                 <div className="flex">
-                    <div class="twenty-five-percent">
-                        <div class="recipe-notes">
+                    <div className="twenty-five-percent">
+                        <div>
                             <h3>RECIPE NOTES</h3>
                             <p>I recommend making this a couple of days in advance to ensure the brine saturates the fennel stalks and kumquats. This pickle will keep in the fridge for up to two months.</p>
                         </div>
                     </div>
-                    <div class="seventy-percent">
-                        <div class="preparation-body">
+                    <div className="seventy-percent">
+                        <div>
                             <h3>preparation</h3>
                             <p>1. Remove the fennel fronds from the stalk and save the fronds for garnishing. Slice the fennel stalks on the bias 1/8 inch thick. Slice the kumquats to a similar thickness. Combine the fennel stalks and the kumquats in a medium sized heat proof bowl or a quart-sized mason jar. To the container, add the crushed red pepper, fennel seed, salt, and crushed garlic.</p>
                             <p>2. In a medium saucepan, combine the white wine vinegar and sugar. Bring this mixture to a boil, stirring occasionally to help dissolve the sugar. Once boiling, pour the liquid into the container with the fennel stalks, kumquats, and spices to submerge.</p>
