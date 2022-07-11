@@ -106,4 +106,4 @@ const OatmealTwoWays = () => {
     )
 }
 
-export default OatmealTwoWay;
+export default OatmealTwoWays;

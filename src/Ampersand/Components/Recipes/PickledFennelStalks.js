@@ -2,7 +2,7 @@
 import React from "react";
 
 
-const FennelFullDish = () => {
+const PickledFennelStalks = (props) => {
 
     return (
         <>
@@ -71,4 +71,4 @@ const FennelFullDish = () => {
     )
 }
 
-export default FennelFullDish;
+export default PickledFennelStalks;

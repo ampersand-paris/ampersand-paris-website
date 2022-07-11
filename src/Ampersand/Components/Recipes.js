@@ -3,26 +3,51 @@ import React from "react";
 import { useState } from "react";
 
 import FennelFullDish from "./Recipes/FennelFullDish";
+import MidProcess from "./Recipes/MidProcess";
+import OatmealTwoWays from "./Recipes/OatmealTwoWays";
+import PickledFennelStalks from  "./Recipes/PickledFennelStalks"
 
 const Recipes = () => {
 
-    const [failspace, setFailspace] = useState('flex')
-    const [generalAssembly, setGeneralAssembly] = useState('none')
+    const [fennelFullDish, setFennelFullDish] = useState('flex')
+    const [pickledFennelStalks, setPickledFennelStalks] = useState('none')
+    const [oatmealTwoWays, setOatmealTwoWays] = useState('none')
+    const [midProcess, setMidProcess] = useState('none')
+
     const [arrowTop, setArrowTop] = useState('flex')
     const [arrowBottom, setArrowBottom] = useState('none')
 
-    const toggleFSDS = () => {
-        setGeneralAssembly('none')
-        setFailspace('flex')
+    const toggleFennelFullDish = () => {
+        setFennelFullDish('flex')
+        setPickledFennelStalks('none')
+        setOatmealTwoWays('none')
+        setMidProcess('none')
+
         setArrowTop('flex')
-        setArrowBottom('none')
     }
 
-    const toggleGA = () => {
-        setFailspace('none')
-        setGeneralAssembly('flex')
+    const togglePickledFennelStalks = () => {
+        setFennelFullDish('none')
+        setPickledFennelStalks('flex')
+        setOatmealTwoWays('none')
+        setMidProcess('none')
+
         setArrowTop('none')
         setArrowBottom('flex')
+    }
+
+    const toggleOatmealTwoWays = () => {
+        setFennelFullDish('none')
+        setPickledFennelStalks('none')
+        setOatmealTwoWays('flex')
+        setMidProcess('none')
+    }
+
+    const toggleMidProcess = () => {
+        setFennelFullDish('none')
+        setPickledFennelStalks('none')
+        setOatmealTwoWays('none')
+        setMidProcess('flex')
     }
 
     const topArrow = () => {
@@ -32,7 +57,7 @@ const Recipes = () => {
         } else if (arrowTop === 'none') {
             setArrowTop('flex')
         }
-    }
+    }        
 
     const bottomArrow = () => {
         if(arrowBottom === 'flex' && arrowTop === 'none') {
@@ -60,7 +85,7 @@ const Recipes = () => {
                     <div className="flex w-one-hundred">
                         <div className="flex column">
                             <div className="flex">
-                                <div  onClick={toggleFSDS} className="border-right tab-padding twenty tab">
+                                <div  onClick={toggleFennelFullDish} className="border-right tab-padding twenty tab">
                                     <p className="no-margin">Pickled Fennel Stalks and Kumquats Over White Beans, Fennel, Blood Orange, and Kalamata Olives</p>  
                                 </div> 
                                 <div style={arrowTopHover} className="flex al-center">
@@ -68,7 +93,7 @@ const Recipes = () => {
                                 </div>
                             </div>
                             <div className="flex">
-                                <div onClick={toggleGA} 
+                                <div onClick={togglePickledFennelStalks} 
                                     className="border-right tab-padding twenty tab">
                                     <p className="no-margin">Pickled Fennel Stalks and Kumquats</p>   
                                 </div>
@@ -77,7 +102,7 @@ const Recipes = () => {
                                 </div>
                             </div>  
                             <div className="flex">
-                                <div onClick={toggleGA} 
+                                <div onClick={toggleOatmealTwoWays} 
                                     className="border-right tab-padding twenty tab">
                                     <p className="no-margin">Oatmeal Two Ways</p>   
                                 </div>
@@ -86,7 +111,7 @@ const Recipes = () => {
                                 </div>
                             </div>  
                             <div className="flex">
-                                <div onClick={toggleGA} 
+                                <div onClick={toggleMidProcess} 
                                     className="border-right tab-padding twenty tab">
                                     <p className="no-margin">Mid-Process Cocktail</p>   
                                 </div>
@@ -96,7 +121,10 @@ const Recipes = () => {
                             </div>  
                         </div>      
                         <div className="experience-width">
-                            <FennelFullDish active={failspace}/> 
+                            <FennelFullDish active={fennelFullDish} /> 
+                            <PickledFennelStalks active={pickledFennelStalks} />
+                            <OatmealTwoWays active={oatmealTwoWays} />
+                            <MidProcess active={midProcess} />
                         </div>
                     </div>
                 </div>

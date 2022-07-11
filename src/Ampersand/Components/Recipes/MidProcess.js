@@ -2,7 +2,7 @@
 import React from "react";
 
 
-const FennelFullDish = () => {
+const MidProcess = () => {
 
     return (
         <>
@@ -59,4 +59,4 @@ const FennelFullDish = () => {
     )
 }
 
-export default FennelFullDish;
+export default MidProcess;
