@@ -28,7 +28,7 @@ const FennelFullDish = () => {
                 <p>Serves: 6</p><p>
                 </p><p>Active Prep: 1 hr and 30 minutes</p> 
             </div>
-            <div class="recipe-body">
+            <div class="recipe-body bright-red">
                 <div class="ingredients">
                     <h3>ingredients</h3>
                     <ul>
