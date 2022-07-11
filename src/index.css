@@ -49,8 +49,13 @@
 .border-radius {
   border-radius: 30px;
 }
+
 .red-border {
   border: 1px solid var(--bright-red)
+}
+
+.red-border-bottom {
+  border-bottom: 1px solid var(--bright-red)
 }
 
 .white-border {
@@ -72,8 +77,8 @@ p {
 }
 
 ul {
-  list-style-type: circle;
-  padding-left: 2vw !important;
+  list-style-type: none;
+  padding-left: 0vw !important;
   font-family: 'futura', sans-serif;
 	font-size: 1rem;
 }
@@ -210,7 +215,7 @@ body {
 }
 
 .seventy-five {
-  width: 75vW;
+  width: 70vW;
 }
 
 .seventy-percent {
@@ -229,9 +234,18 @@ body {
   width: 30%;
 }
 
+.twenty-five-percent {
+  width: 25%;
+}
+
 .twenty {
   width: 15vW;
 }
+
+.height-150px {
+  height: 150px;
+}
+
 .text-width {
   width: 50vW;
 }

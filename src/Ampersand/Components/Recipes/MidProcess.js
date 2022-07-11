@@ -2,10 +2,14 @@
 import React from "react";
 
 
-const MidProcess = () => {
+const MidProcess = (props) => {
+
+    const contentStyles = {
+        display: props.active
+    }
 
     return (
-        <>
+        <div style={contentStyles} className="column">
             <div className="flex space-btwn w-one-hundred">
                 <h1 className="bright-red sub-title">F</h1>
                 <h1 className="bright-red sub-title">E</h1>
@@ -55,7 +59,7 @@ const MidProcess = () => {
                     <p>6. To serve, ladle the white beans into a shallow bowl and place the roasted fennel, a slice of blood orange and a few kalamata olives. Garnish with pickled fennel stalk, kumquats, and fennel fronds.</p>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

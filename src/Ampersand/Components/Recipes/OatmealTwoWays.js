@@ -2,10 +2,14 @@
 import React from "react";
 
 
-const OatmealTwoWays = () => {
+const OatmealTwoWays = (props) => {
+
+    const contentStyles = {
+        display: props.active
+    }
 
     return (
-        <>
+        <div style={contentStyles} className="column">
             <div className="flex space-btwn w-one-hundred">
                 <h1 className="bright-red sub-title">M</h1>
                 <h1 className="bright-red sub-title">A</h1>
@@ -102,7 +106,7 @@ const OatmealTwoWays = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
