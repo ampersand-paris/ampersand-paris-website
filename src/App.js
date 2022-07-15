@@ -31,11 +31,8 @@ function App() {
   }
 
   const toggleRightMenu = () => {
-    if (leftDisplay === 'flex' && rightDisplay === 'flex') {
-      setLeftDisplay('none')
-    } else if (leftDisplay === 'none' && rightDisplay === 'flex') {
-      setLeftDisplay('flex')
-    }
+    console.log('hello')
+    document.getElementById('right-menu').classList.toggle('open-right-menu')
   }
 
   function reducer (state, action) {

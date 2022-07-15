@@ -26,7 +26,7 @@ const FennelFullDish = (props) => {
                 <h1 className="sub-title">C</h1>
                 <h1 className="sub-title">H</h1>
             </div>
-            <div className="height-150px flex column space-btwn red-border-bottom">
+            <div className="height-150px flex column red-border-bottom">
                 <h2 className="uppercase">pickled fennel stalks and kumquats over white beans, fennel, blood orange, and 
             kalamata olives</h2>
                 <div>

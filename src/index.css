@@ -1,3 +1,15 @@
+/* ====== KEYFRAMES ====== */
+
+@keyframes openRightMenu {
+  from {width: 0px;}
+  to {width: 250px;}
+}
+
+/* ====== ANIMATIONS ====== */
+
+.open-right-menu {
+  animation: openRightMenu 1s forwards;
+}
 /* ====== COLORS ====== */
 
 :root {
@@ -10,6 +22,10 @@
 }
 
 /* === BACKGROUNDS === */
+
+.black {
+  background-color: black;
+}
 
 .bg-light-blue {
   background-color: var(--light-blue);
@@ -51,15 +67,19 @@
 }
 
 .red-border {
-  border: 1px solid var(--bright-red)
+  border: 1px solid var(--bright-red);
 }
 
 .red-border-bottom {
-  border-bottom: 1px solid var(--bright-red)
+  border-bottom: 1px solid var(--bright-red);
+}
+
+.red-border-left {
+  border-left: 1px solid var(--bright-red);
 }
 
 .white-border {
-  border: 1px solid var(--white)
+  border: 1px solid var(--white);
 }
 
 .border-right {
@@ -330,20 +350,26 @@ body {
   position: fixed;
   left: 0%;
   opacity: 100%;
-  width: 20vW;
+  width: 200px;
 }
 
 .right-menu {
   position: fixed;
   right: 0%;
   opacity: 100%;
-  width: 20vW;
+  width: 50px;
 }
 
 .right-menu:hover {
   opacity: 100%;
 }
 
+.right-menu-triangle {
+  margin-top: 20px;
+  transform: rotate(180deg);
+  width: 20px;
+  height: 30px;
+}
 .left-menu:hover {
   opacity: 100%;
 }

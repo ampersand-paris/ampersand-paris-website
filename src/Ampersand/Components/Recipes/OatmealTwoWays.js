@@ -17,7 +17,7 @@ const OatmealTwoWays = (props) => {
                 <h1 className="bright-red sub-title">C</h1>
                 <h1 className="bright-red sub-title">H</h1>
             </div>
-            <div className="height-150px flex column space-btwn red-border-bottom">
+            <div className="height-150px flex column red-border-bottom">
                 <h2 className="uppercase">oatmeal two ways</h2>
                 <div>
                     <p className="no-space">Servings: 16*</p>
