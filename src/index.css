@@ -148,7 +148,14 @@ a:link {
 }
 
 .sub-title {
-  font-size: 2em;
+  font-size: 1.5em;
+  top: 20px;
+}
+
+.sub-title-right {
+  font-size: 1.5em;
+  top: 20px;
+  right: 20px;
 }
 
 .portfolio-title {
@@ -200,6 +207,10 @@ body {
   z-index: 999 !important;
 }
 
+.z-index-100 {
+  z-index: 100 !important;
+
+}
 /* === FLEX === */
 
 .flex {
@@ -367,6 +378,15 @@ body {
 
 .ampersand {
   width: 10vW;
+}
+
+
+.left-margin {
+  margin-left: 20px;
+}
+
+.right-margin {
+  margin-right: 20px;
 }
 
 .menu-width {

@@ -29,7 +29,7 @@ const Performance = (props) => {
     return (
         <>
             <div className="full-height full-width flex flex-start al-center absolute">
-                <Link onClick={props.active} className="ampersand fixed" to="/"><img src="/Images/right-half-ampersand.svg" /></Link>
+                <Link className="ampersand fixed left-margin cursor" to="/"><img src="/Images/right-half-ampersand.svg" /></Link>
             </div>
             <div class="stnd-padding flex column al-center just-center">
                 <Ampersand />

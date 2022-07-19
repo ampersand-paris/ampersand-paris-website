@@ -55,8 +55,9 @@ const RightMenu = (props) => {
     
     return (
         <div className="z-index flex right-menu h-one-hundred" id="right-menu">
-            <img onClick={props.active} className="right-menu-triangle" src="./Images/Triangle.png" />       
+            <img onClick={props.active} className="right-menu-triangle cursor" src="./Images/Triangle.png" />
             <div className="z-index menu-width h-one-hundred flex column just-center menu-side-padding txt-al-right red-border-left bg-white">
+                <h3 className="absolute sub-title-right bright-red opacity-80 text-al-right">Creative</h3>       
                 <h3 onClick={scrollAmpersand} className="bright-red menu cursor">ampersand</h3>
                 <h3 onClick={scrollCSA} className="bright-red menu cursor">fermentation CSA</h3>
                 <h3 onClick={scrollProjects} className="bright-red menu cursor">projects</h3>

@@ -16,7 +16,7 @@ const Portfolio = () => {
                 <h1 className="white no-space">Portfolio</h1>
             </div>   
             <div className="seventy-five relative">
-                <div className="portfolio-text relative z-index">
+                <div className="portfolio-text relative z-index-100">
                     <h3 className="white portfolio-title"><span className="opacity-80">Featured Project |</span> FAILSPACE</h3>
                     <div className="bg-white  border-radius text-padding">
                         <p>A boldly designed web application that serves as the digital home for a design studio and performing arts mentorship organization in New York City.</p>
@@ -37,7 +37,7 @@ const Portfolio = () => {
                 </div>
             </div>
             <div className="seventy-five relative top-padding flex flex-end">
-                <div className="portfolio-text relative z-index">
+                <div className="portfolio-text relative z-index-100">
                     <h3 className="white portfolio-title txt-al-right"><span className="opacity-80">Featured Project |<br></br></span> You Can Cook Literally Anything</h3>
                     <div className="bg-white border-radius text-padding">
                         <p className="txt-al-right">Web application developed for recipe collection and recipe testing. Users can keep track of their correspondance, search published recipes, and, for selected users, create and share their thoughts on recipes in development.</p>
@@ -59,7 +59,7 @@ const Portfolio = () => {
                 </div>
             </div>
             <div className="seventy-five relative top-padding">
-                <div className="portfolio-text relative z-index">
+                <div className="portfolio-text relative z-index-100">
                     <h3 className="white portfolio-title"><span className="opacity-80">Featured Project |</span> PRIORI</h3>
                     <div className="bg-white  border-radius text-padding">
                         <p>Prioritization web application that allows users to make to-do lists and prioritize a maxiumum of three tasks per day.</p>
@@ -82,7 +82,7 @@ const Portfolio = () => {
                 </div>
             </div>
             <div className="seventy-five relative top-padding flex flex-end">
-                <div className="portfolio-text relative z-index">
+                <div className="portfolio-text relative z-index-100">
                     <h3 className="white portfolio-title txt-al-right"><span className="opacity-80">Featured Project |</span> Reaxion</h3>
                     <div className="bg-white border-radius text-padding">
                         <p className="txt-al-right">A web app developed to survey immediate, emotional feedback in group settings. The app sends users easy to fill out surveys surveys after participating in events then collects and displays to the partipants' community all the survey results that were gathered within the 15-minute survey-window.</p>
@@ -102,7 +102,7 @@ const Portfolio = () => {
                 </div>
             </div>
             <div className="seventy-five relative top-padding">
-                <div className="portfolio-text relative z-index">
+                <div className="portfolio-text relative z-index-100">
                     <h3 className="white portfolio-title"><span className="opacity-80">Featured Project |</span> BUNBUNS</h3>
                     <div className="bg-white  border-radius text-padding">
                         <p>A visually striking social media web appliation for homecooks to use to create and share recipes.</p>

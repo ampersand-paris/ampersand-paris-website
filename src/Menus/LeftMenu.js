@@ -35,7 +35,7 @@ const LeftMenu = (props) => {
     }
 
     const scrollExperience = () => {
-        if (window.location.href.indexOf("about") > -1) {
+        if (window.location.href.indexOf("se") > -1) {
             const element = document.getElementById("experience");
             element.scrollIntoView({ behavior: 'smooth' });
         } else {
@@ -45,11 +45,14 @@ const LeftMenu = (props) => {
 
     return (
         <div className="z-index h-one-hundred left-menu flex" id="left-menu">
-            <div className="z-index menu-width h-one-hundred flex column just-center menu-side-padding white-border-right bg-bright-red">
-                <h3 onClick={scrollAbout} className="white menu cursor">about</h3>
-                <h3 onClick={scrollSkills} className="white menu cursor">skills</h3>
-                <h3 onClick={scrollPortfolio} className="white menu cursor">portfolio</h3>
-                <h3 onClick={scrollExperience} className="white menu cursor">experience</h3>
+            <div className="z-index relative menu-width h-one-hundred flex column just-center menu-side-padding white-border-right bg-bright-red cursor">
+                <h3 className="sub-title absolute white opacity-80 ">Software Engineer</h3>
+                <div>
+                    <h3 onClick={scrollAbout} className="white menu cursor">about</h3>
+                    <h3 onClick={scrollSkills} className="white menu cursor">skills</h3>
+                    <h3 onClick={scrollPortfolio} className="white menu cursor">portfolio</h3>
+                    <h3 onClick={scrollExperience} className="white menu cursor">experience</h3>
+                </div>
             </div>
             <img onClick={props.active} className="left-menu-triangle" src="./Images/WhiteTriangle.svg" />       
         </div>
