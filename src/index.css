@@ -174,7 +174,12 @@ a:link {
 .cursor {
   cursor: pointer;
 }
+
 /* === ALIGNMENT === */
+
+.text-al-center {
+  text-align: center;
+}
 
 .txt-al-right {
   text-align: right;
@@ -240,22 +245,11 @@ body {
   justify-content: space-between;
 }
 
-/* === HORIZONTAL === */
+/* === WIDTH === */
 
 .half {
   width: 50vW;
 }
-
-/* === VERTICAL === */
-
-.full-height {
-  height: 100vH;
-}
-
-.h-one-hundred {
-  height: 100%;
-}
-
 .w-one-hundred {
   width: 100%;
 }
@@ -292,12 +286,23 @@ body {
   width: 15vW;
 }
 
-.height-150px {
-  height: 150px;
-}
-
 .text-width {
   width: 50vW;
+}
+
+/* === HEIGHT === */
+
+.full-height {
+  height: 100vH;
+}
+
+.h-one-hundred {
+  height: 100%;
+}
+
+
+.height-150px {
+  height: 150px;
 }
 
 /* ====== PADDING ====== */
@@ -520,4 +525,47 @@ body {
 
 .experience-height {
   min-height: 50vH;
+}
+
+@media screen and (max-width: 600px) {
+
+/* ====== HEIGHT ====== */
+
+.text-width {
+  width: 75vW;
+}
+/* ====== PADDING ====== */
+
+.footer-padding {
+  padding: 5vH 40px;
+}
+
+.text-padding {
+  padding: 1vH 2vW;
+}
+
+  /* ====== HOME ====== */
+
+.ampersand {
+    width: 100px;
+  }
+
+.mobile-ampersand {
+  display: none;
+}
+
+/* ====== FOOTER ====== */
+
+.icon-footer{
+  width: 30px;
+}
+
+.icon-padding {
+  padding: 1vH 3vW;
+}
+
+.icon-padding-first {
+  padding: 1vH 3vW 1vH 0vW;
+}
+
 }
