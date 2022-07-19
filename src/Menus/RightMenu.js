@@ -9,38 +9,38 @@ const RightMenu = (props) => {
     const baseURL = 'http://ampersand.paris';
 
     const scrollAmpersand = () => {
-        if (window.location.href.indexOf("ampersand") > -1) {
+        if (window.location.href.indexOf("creative") > -1) {
             const element = document.getElementById("ampersand");
             element.scrollIntoView({ behavior: 'smooth' });
         } else {
-            window.location.href = `${baseURL}/ampersand`
+            window.location.href = `${baseURL}/creative`
         }
     }
     
     const scrollCSA = () => {
-        if (window.location.href.indexOf("ampersand") > -1) {
+        if (window.location.href.indexOf("creative") > -1) {
             const element = document.getElementById("CSA");
             element.scrollIntoView({ behavior: 'smooth' });
         } else {
-            window.location.href = `${baseURL}/ampersand#CSA`
+            window.location.href = `${baseURL}/creative#CSA`
         }
     }
 
     const scrollProjects = () => {
-        if (window.location.href.indexOf("ampersand") > -1) {
+        if (window.location.href.indexOf("creative") > -1) {
             const element = document.getElementById("projects");
             element.scrollIntoView({ behavior: 'smooth' });
         } else {
-            window.location.href = `${baseURL}/ampersand#projects`
+            window.location.href = `${baseURL}/creative#projects`
         } 
     }
 
     const scrollRecipes = () => {
-        if (window.location.href.indexOf("ampersand") > -1) {
+        if (window.location.href.indexOf("creative") > -1) {
             const element = document.getElementById("recipes");
             element.scrollIntoView({ behavior: 'smooth' });
         } else {
-            window.location.href = `${baseURL}/ampersand#recipes`
+            window.location.href = `${baseURL}/creative#recipes`
         }
     }
 

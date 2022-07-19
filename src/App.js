@@ -45,8 +45,8 @@ function App() {
       <RightMenu active={toggleRightMenu} opacity={rightOpacity} display={rightDisplay}/>
       <Routes>
         <Route path="/" element={<Home redWidth={redBackground} whiteWidth={whiteBackground}/>} />
-        <Route path="/about" element={<Coding active={toggleLeftMenu}/>} />
-        <Route path="/ampersand" element={<Performance active={toggleRightMenu}/>} />
+        <Route path="/se" element={<Coding active={toggleLeftMenu}/>} />
+        <Route path="/creative" element={<Performance active={toggleRightMenu}/>} />
       </Routes>
     </Router>
   );

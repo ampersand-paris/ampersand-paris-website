@@ -8,29 +8,29 @@ const LeftMenu = (props) => {
     const baseURL = 'http://ampersand.paris';
 
     const scrollAbout = () => {
-        if (window.location.href.indexOf("about") > -1) {
+        if (window.location.href.indexOf("se") > -1) {
             const element = document.getElementById("about");
             element.scrollIntoView({ behavior: 'smooth' });
         } else {
-            window.location.href = `${baseURL}/about`
+            window.location.href = `${baseURL}/se`
         }
     }
     
     const scrollSkills = () => {
-        if (window.location.href.indexOf("about") > -1) {
+        if (window.location.href.indexOf("se") > -1) {
             const element = document.getElementById("skills");
             element.scrollIntoView({ behavior: 'smooth' });
         } else {
-            window.location.href = `${baseURL}/about#skills`
+            window.location.href = `${baseURL}/se#skills`
         }
     }
 
     const scrollPortfolio = () => {
-        if (window.location.href.indexOf("about") > -1) {
+        if (window.location.href.indexOf("se") > -1) {
             const element = document.getElementById("portfolio");
             element.scrollIntoView({ behavior: 'smooth' });
         } else {
-            window.location.href = `${baseURL}/about#portfolio`
+            window.location.href = `${baseURL}/se#portfolio`
         }
     }
 
@@ -39,7 +39,7 @@ const LeftMenu = (props) => {
             const element = document.getElementById("experience");
             element.scrollIntoView({ behavior: 'smooth' });
         } else {
-            window.location.href = `${baseURL}/about#experience`
+            window.location.href = `${baseURL}/se#experience`
         }
     }
 
