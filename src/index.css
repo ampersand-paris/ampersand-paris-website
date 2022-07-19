@@ -119,6 +119,11 @@ ul {
 	font-size: 1rem;
 }
 
+.circles {
+  list-style-type: circle ;
+  padding-left: 4vw !important;
+}
+
 h1 {
 	font-family: 'nasalization', sans-serif;
   font-size: 4em;
@@ -564,7 +569,7 @@ h1 {
 }
 
 .twenty {
-  width: 65vW;
+  width: 60vW;
 }
 
 /* ====== PADDING ====== */
