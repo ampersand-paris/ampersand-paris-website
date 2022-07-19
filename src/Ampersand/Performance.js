@@ -14,16 +14,16 @@ const Performance = (props) => {
     const baseURL = 'http://ampersand.paris';
 
     useEffect(() => {
-        if(window.location.href === `${baseURL}/ampersand#CSA`) {
+        if(window.location.href === `${baseURL}/creative#CSA`) {
             document.getElementById("CSA").scrollIntoView({ behavior: 'smooth' });
         }
-        if(window.location.href === `${baseURL}/ampersand#recipes`) {
+        if(window.location.href === `${baseURL}/creative#recipes`) {
             document.getElementById("recipes").scrollIntoView({ behavior: 'smooth' });
         }
-        if(window.location.href === `${baseURL}/ampersand#projects`) {
+        if(window.location.href === `${baseURL}/creative#projects`) {
             document.getElementById("projects").scrollIntoView({ behavior: 'smooth' });
         }
-        if(window.location.href === `${baseURL}/ampersand#writings`) {
+        if(window.location.href === `${baseURL}/creative#writings`) {
             document.getElementById("writings").scrollIntoView({ behavior: 'smooth' });
         }
     }  

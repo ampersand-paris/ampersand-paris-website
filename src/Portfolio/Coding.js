@@ -14,16 +14,16 @@ const Coding = (props) => {
     const baseURL = 'http://ampersand.paris';
 
     useEffect(() => {
-        if(window.location.href === `${baseURL}/about#experience`) {
+        if(window.location.href === `${baseURL}/se#experience`) {
             document.getElementById("experience").scrollIntoView({ behavior: 'smooth' });
         }
-        if(window.location.href === `${baseURL}/about#skills`) {
+        if(window.location.href === `${baseURL}/se#skills`) {
             document.getElementById("skills").scrollIntoView({ behavior: 'smooth' });
         }
-        if(window.location.href === `${baseURL}/about#portfolio`) {
+        if(window.location.href === `${baseURL}/se#portfolio`) {
             document.getElementById("portfolio").scrollIntoView({ behavior: 'smooth' });
         }
-        if(window.location.href === `${baseURL}/about#experience`) {
+        if(window.location.href === `${baseURL}/se#experience`) {
             document.getElementById("portfolio").scrollIntoView({ behavior: 'smooth' });
         }
     }  
