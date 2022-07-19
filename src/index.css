@@ -529,10 +529,20 @@ body {
 
 @media screen and (max-width: 800px) {
 
+  /* ====== FONTS ====== */
+
+h1 {
+  font-size: 3em;
+}
+
 /* ====== HEIGHT ====== */
 
 .height-150px {
   height: 250px;
+}
+
+.mobile-h-one-hundred {
+  height: 100%;
 }
 
 /* ====== WIDTH ====== */

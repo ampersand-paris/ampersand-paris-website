@@ -28,7 +28,7 @@ const Coding = (props) => {
     return (
         <>
             <div className="full-height full-width flex flex-end al-center absolute">
-                <Link className="ampersand fixed right-margin cursor " to="/"><img  src="/Images/left-half-ampersand.svg" /></Link>
+                <Link className="ampersand mobile-ampersand fixed right-margin cursor " to="/"><img  src="/Images/left-half-ampersand.svg" /></Link>
             </div>
             <div className="stnd-padding flex column al-center just-center bg-bright-red">
                 <About />
