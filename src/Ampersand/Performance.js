@@ -11,7 +11,7 @@ import Writings from "./Components/Writings";
 
 const Performance = (props) => {
 
-    const baseURL = 'http://ampersand.paris';
+    const baseURL = 'https://ampersand.paris';
 
     useEffect(() => {
         if(window.location.href === `${baseURL}/creative#CSA`) {
@@ -28,6 +28,8 @@ const Performance = (props) => {
         }
     }  
     )
+
+    
     return (
         <>
             <div className="full-height full-width flex flex-start al-center absolute">

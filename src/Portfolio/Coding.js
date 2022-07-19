@@ -11,7 +11,7 @@ import Experience from "./Components/Experience";
 
 const Coding = (props) => {
 
-    const baseURL = 'http://ampersand.paris';
+    const baseURL = 'https://ampersand.paris';
 
     useEffect(() => {
         if(window.location.href === `${baseURL}/se#experience`) {
