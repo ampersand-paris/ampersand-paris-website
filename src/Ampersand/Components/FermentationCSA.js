@@ -4,7 +4,7 @@ const FermentationCSA = () => {
         <>
             <a id="CSA"></a>
             <div class="stnd-padding flex column al-center just-center">
-                <div class="border-radius text-padding text-width">
+                <div class="border-radius text-width">
                     <h1 className="bright-red sub-title">fermentation CSA</h1>
                     <h2 className="bright-red opacity-80 no-space">what is a csa?</h2>
                     <p className="no-space">CSA (Community Supported Agriculture) is an agricultural model that connects the farmer and consumer directly. CSA Members often will purchase a share of the future harvest at the beginning of the growing season. As farmers harvest throughout the season, members receive their weekly share of fruits and vegetables from the farmer directly.</p>

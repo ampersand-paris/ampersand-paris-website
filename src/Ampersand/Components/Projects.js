@@ -12,7 +12,7 @@ const Fermentorship = () => {
             <div className="text-padding seventy-five">
                 <h1 className="bright-red no-space">Projects</h1>
             </div>   
-            <div className="seventy-five relative">
+            <div className="seventy-five relative mobile-flex mobile-column-reverse">
                 <div className="portfolio-text relative z-index-100">
                     <h3 className="bright-red portfolio-title">You Can Cook Literally Anything</h3>
                     <div className="bg-bright-red  border-radius text-padding">
@@ -26,12 +26,12 @@ const Fermentorship = () => {
                         <a href="https://www.instagram.com/youcancookliterallyanything/"><img className="icon icon-padding-first" src="./Images/BrightRedInstagram.svg" /></a>
                     </div>
                 </div>
-                <div style={{ backgroundImage: `url(${YCCLABackground})` }} className="portfolio-image absolute right" id="failspace">
+                <div style={{ backgroundImage: `url(${YCCLABackground})` }} className="portfolio-image absolute mobile-relative right" id="failspace">
                     <div className="portfolio-image-overlay">
                     </div>
                 </div>
             </div>
-            <div className="seventy-five relative top-padding flex flex-end">
+            <div className="seventy-five relative top-padding flex flex-end mobile-flex mobile-column-reverse">
                 <div className="portfolio-text relative z-index-100">
                     <h3 className="bright-red portfolio-title txt-al-right">Fermentorship</h3>
                     <div className="bg-bright-red border-radius text-padding">
@@ -45,12 +45,12 @@ const Fermentorship = () => {
                     <div className="flex flex-end no-space">
                     </div>
                 </div>
-                <div style={{ backgroundImage: `url(${fermentorshipBackground})` }} className="bg-center portfolio-image absolute left" id="failspace">
+                <div style={{ backgroundImage: `url(${fermentorshipBackground})` }} className="bg-center portfolio-image absolute mobile-relative left" id="failspace">
                     <div className="portfolio-image-overlay">
                     </div>
                 </div>
             </div>
-            <div className="seventy-five relative top-padding">
+            <div className="seventy-five relative top-padding  mobile-flex mobile-column-reverse">
                 <div className="portfolio-text relative z-index-100">
                     <h3 className="bright-red portfolio-title">Manifest Destiny</h3>
                     <div className="bg-bright-red border-radius text-padding">
@@ -64,7 +64,7 @@ const Fermentorship = () => {
                         <a href="https://ycclav2.herokuapp.com/"><img className="icon icon-padding" src="./Images/ExternalLink.png" /></a>
                     </div>
                 </div>
-                <div style={{ backgroundImage: `url(${manifestDestiny})` }} className="portfolio-image bg-center absolute right" id="failspace">
+                <div style={{ backgroundImage: `url(${manifestDestiny})` }} className="portfolio-image bg-center absolute mobile-relative right" id="failspace">
                     <div className="portfolio-image-overlay">
 
                     </div>

@@ -531,9 +531,6 @@ body {
 
 /* ====== HEIGHT ====== */
 
-.text-width {
-  width: 75vW;
-}
 
 /* ====== WIDTH ====== */
 
@@ -541,6 +538,13 @@ body {
   width: 100%;
 }
 
+.seventy-five {
+  width: 75vW;
+}
+
+.text-width {
+  width: 70vW;
+}
 /* ====== PADDING ====== */
 
 .footer-padding {
@@ -557,6 +561,20 @@ body {
   flex-direction: column;
 }
 
+.mobile-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.mobile-flex {
+  display: flex;
+}
+
+/* ====== POSITION ====== */
+
+.mobile-relative {
+  position: relative;
+}
+
 /* ====== HOME ====== */
 
 .ampersand {
@@ -564,6 +582,25 @@ body {
   }
 
 .mobile-ampersand {
+  display: none;
+}
+
+/* ====== PROJECTS ====== */
+
+.portfolio-text {
+  width: 75vW;
+}
+
+.portfolio-image {
+  border-radius: 10px;
+  top: 0;
+  width: 75vW;
+  height: 43.125vW;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.portfolio-image-overlay {
   display: none;
 }
 
