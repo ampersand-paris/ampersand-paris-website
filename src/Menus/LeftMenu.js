@@ -5,17 +5,14 @@ import { Link } from "react-router-dom";
 
 const LeftMenu = (props) => {
 
-    const contentStyles = {
-        display: (props.display),
-        opacity: (props.opacity)
-    }
+    const baseURL = 'http://ampersand.paris';
 
     const scrollAbout = () => {
         if (window.location.href.indexOf("about") > -1) {
             const element = document.getElementById("about");
             element.scrollIntoView({ behavior: 'smooth' });
         } else {
-            window.location.href = `${process.env.BASE_URL}/about`
+            window.location.href = `${baseURL}/about`
         }
     }
     
@@ -24,7 +21,7 @@ const LeftMenu = (props) => {
             const element = document.getElementById("skills");
             element.scrollIntoView({ behavior: 'smooth' });
         } else {
-            window.location.href = `${process.env.BASE_URL}/about#skills`
+            window.location.href = `${baseURL}/about#skills`
         }
     }
 
@@ -33,7 +30,7 @@ const LeftMenu = (props) => {
             const element = document.getElementById("portfolio");
             element.scrollIntoView({ behavior: 'smooth' });
         } else {
-            window.location.href = `${process.env.BASE_URL}/about#portfolio`
+            window.location.href = `${baseURL}/about#portfolio`
         }
     }
 
@@ -42,13 +39,13 @@ const LeftMenu = (props) => {
             const element = document.getElementById("experience");
             element.scrollIntoView({ behavior: 'smooth' });
         } else {
-            window.location.href = `${process.env.BASE_URL}/about#experience`
+            window.location.href = `${baseURL}/about#experience`
         }
     }
 
     return (
         <div className="z-index h-one-hundred left-menu flex" id="left-menu">
-            <div style={contentStyles} className="z-index menu-width h-one-hundred flex column just-center menu-side-padding white-border-right bg-bright-red">
+            <div className="z-index menu-width h-one-hundred flex column just-center menu-side-padding white-border-right bg-bright-red">
                 <h3 onClick={scrollAbout} className="white menu cursor">about</h3>
                 <h3 onClick={scrollSkills} className="white menu cursor">skills</h3>
                 <h3 onClick={scrollPortfolio} className="white menu cursor">portfolio</h3>
