@@ -74,7 +74,7 @@
 /* === BORDERS === */
 
 .border-radius {
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 .red-border {
@@ -534,6 +534,13 @@ body {
 .text-width {
   width: 75vW;
 }
+
+/* ====== WIDTH ====== */
+
+.fifty-percent {
+  width: 100%;
+}
+
 /* ====== PADDING ====== */
 
 .footer-padding {
@@ -544,7 +551,13 @@ body {
   padding: 1vH 2vW;
 }
 
-  /* ====== HOME ====== */
+/* ====== SPACING ====== */
+
+.mobile-column {
+  flex-direction: column;
+}
+
+/* ====== HOME ====== */
 
 .ampersand {
     width: 100px;

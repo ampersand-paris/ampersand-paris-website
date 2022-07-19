@@ -23,7 +23,7 @@ const FermentationCSA = () => {
                         <li>If you would like to end or pause your membership, you must email ampersand.s.paris@gmail.com before the 15th of the month, otherwise, you will still be charged for your share.</li>
                         <li>Special fermentation projects will be available outside of the CSA (think preserved lemons, nocino, hard kombucha, sauerkraut).</li>
                     </ul>
-                    <div className="flex text-padding bg-bright-red border-radius">
+                    <div className="flex mobile-column text-padding bg-bright-red border-radius">
                         <div className="fifty-percent">
                             <h2 className="white">Past Flavors</h2>
                             <ul className="white">
