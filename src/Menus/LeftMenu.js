@@ -47,11 +47,14 @@ const LeftMenu = (props) => {
     }
 
     return (
-        <div style={contentStyles} className="z-index h-one-hundred flex column just-center side-padding left-menu">
-            <h3 onClick={scrollAbout} className="white menu">about</h3>
-            <h3 onClick={scrollSkills} className="white menu">skills</h3>
-            <h3 onClick={scrollPortfolio} className="white menu">portfolio</h3>
-            <h3 onClick={scrollExperience} className="white menu">experience</h3>
+        <div className="z-index h-one-hundred left-menu flex" id="left-menu">
+            <div style={contentStyles} className="z-index menu-width h-one-hundred flex column just-center menu-side-padding white-border-right bg-bright-red">
+                <h3 onClick={scrollAbout} className="white menu">about</h3>
+                <h3 onClick={scrollSkills} className="white menu">skills</h3>
+                <h3 onClick={scrollPortfolio} className="white menu">portfolio</h3>
+                <h3 onClick={scrollExperience} className="white menu">experience</h3>
+            </div>
+            <img onClick={props.active} className="left-menu-triangle" src="./Images/WhiteTriangle.svg" />       
         </div>
     )
 }

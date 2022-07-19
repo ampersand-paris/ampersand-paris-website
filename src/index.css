@@ -1,8 +1,14 @@
 /* ====== KEYFRAMES ====== */
 
 @keyframes openRightMenu {
-  from {width: 0px;}
-  to {width: 250px;}
+  from {right: -200px;}
+  to {right: 0px;}
+}
+
+
+@keyframes openLeftMenu {
+  from {left: -140px;}
+  to {left: 0px;}
 }
 
 /* ====== ANIMATIONS ====== */
@@ -10,6 +16,11 @@
 .open-right-menu {
   animation: openRightMenu 1s forwards;
 }
+
+.open-left-menu {
+  animation: openLeftMenu 1s forwards;
+}
+
 /* ====== COLORS ====== */
 
 :root {
@@ -82,9 +93,14 @@
   border: 1px solid var(--white);
 }
 
+.white-border-right {
+  border-right: 1px solid var(--white);
+}
+
 .border-right {
   border-right: 2px solid var(--vermillion);
 }
+
 
 /* ====== FONTS ====== */
 
@@ -272,6 +288,10 @@ body {
 
 /* ====== PADDING ====== */
 
+.menu-side-padding {
+  padding: 0vH 30px;
+}
+
 .side-padding {
   padding: 0vH 2vW;
 }
@@ -346,22 +366,24 @@ body {
   width: 10vW;
 }
 
+.menu-width {
+  width: 180px;
+}
+
 .left-menu {
   position: fixed;
-  left: 0%;
-  opacity: 100%;
-  width: 200px;
+  left: -210px;
+}
+
+.left-menu-triangle {
+  margin-top: 20px;
+  width: 20px;
+  height: 30px;
 }
 
 .right-menu {
   position: fixed;
-  right: 0%;
-  opacity: 100%;
-  width: 50px;
-}
-
-.right-menu:hover {
-  opacity: 100%;
+  right: -210px;
 }
 
 .right-menu-triangle {
@@ -369,9 +391,6 @@ body {
   transform: rotate(180deg);
   width: 20px;
   height: 30px;
-}
-.left-menu:hover {
-  opacity: 100%;
 }
 
 /* ====== AMPERSAND ====== */

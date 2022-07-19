@@ -23,15 +23,11 @@ function App() {
   const[leftDisplay, setLeftDisplay] = useState('flex')
 
   const toggleLeftMenu = () => {
-    if (leftDisplay === 'flex' && rightDisplay === 'flex') {
-      setRightDisplay('none')
-    } else if (leftDisplay === 'flex' && rightDisplay === 'none') {
-      setRightDisplay('flex')
-    }
+    document.getElementById('left-menu').classList.toggle('open-left-menu')
+
   }
 
   const toggleRightMenu = () => {
-    console.log('hello')
     document.getElementById('right-menu').classList.toggle('open-right-menu')
   }
 
