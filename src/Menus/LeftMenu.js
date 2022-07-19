@@ -15,7 +15,7 @@ const LeftMenu = (props) => {
             const element = document.getElementById("about");
             element.scrollIntoView({ behavior: 'smooth' });
         } else {
-            window.location.href = "http://localhost:3000/about"
+            window.location.href = `${process.env.BASE_URL}/about`
         }
     }
     
@@ -24,7 +24,7 @@ const LeftMenu = (props) => {
             const element = document.getElementById("skills");
             element.scrollIntoView({ behavior: 'smooth' });
         } else {
-            window.location.href = "http://localhost:3000/about#skills"
+            window.location.href = `${process.env.BASE_URL}/about#skills`
         }
     }
 
@@ -33,7 +33,7 @@ const LeftMenu = (props) => {
             const element = document.getElementById("portfolio");
             element.scrollIntoView({ behavior: 'smooth' });
         } else {
-            window.location.href = "http://localhost:3000/about#portfolio"
+            window.location.href = `${process.env.BASE_URL}/about#portfolio`
         }
     }
 
@@ -42,7 +42,7 @@ const LeftMenu = (props) => {
             const element = document.getElementById("experience");
             element.scrollIntoView({ behavior: 'smooth' });
         } else {
-            window.location.href = "http://localhost:3000/about#experience"
+            window.location.href = `${process.env.BASE_URL}/about#experience`
         }
     }
 

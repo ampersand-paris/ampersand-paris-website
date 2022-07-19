@@ -11,10 +11,6 @@ const RightMenu = (props) => {
         opacity: (props.opacity)
     }
 
-    const helloWorld = () => {
-        console.log('hello')
-    }
-
     // const scrollAmpersand = () => {
     //     if (window.location.href === "http://localhost:3000/") {
     //         window.location.href = "http://localhost:3000/ampersand"
@@ -28,7 +24,7 @@ const RightMenu = (props) => {
             const element = document.getElementById("ampersand");
             element.scrollIntoView({ behavior: 'smooth' });
         } else {
-            window.location.href = "http://localhost:3000/ampersand"
+            window.location.href = `${process.env.BASE_URL}/ampersand`
         }
     }
     
@@ -37,7 +33,7 @@ const RightMenu = (props) => {
             const element = document.getElementById("CSA");
             element.scrollIntoView({ behavior: 'smooth' });
         } else {
-            window.location.href = "http://localhost:3000/ampersand#CSA" 
+            window.location.href = `${process.env.BASE_URL}/ampersand#CSA`
         }
     }
 
@@ -46,7 +42,7 @@ const RightMenu = (props) => {
             const element = document.getElementById("projects");
             element.scrollIntoView({ behavior: 'smooth' });
         } else {
-            window.location.href = "http://localhost:3000/ampersand#projects"
+            window.location.href = `${process.env.BASE_URL}/ampersand#projects`
         } 
     }
 
@@ -55,7 +51,7 @@ const RightMenu = (props) => {
             const element = document.getElementById("recipes");
             element.scrollIntoView({ behavior: 'smooth' });
         } else {
-            window.location.href = "http://localhost:3000/ampersand#recipes"
+            window.location.href = `${process.env.BASE_URL}/ampersand#recipes`
         }
     }
 
@@ -64,7 +60,7 @@ const RightMenu = (props) => {
             const element = document.getElementById("writings");
             element.scrollIntoView({ behavior: 'smooth' });
         } else {
-            window.location.href = "http://localhost:3000/ampersand#writings"
+            window.location.href = `${process.env.BASE_URL}/ampersand#writings`
         }
     }
     
