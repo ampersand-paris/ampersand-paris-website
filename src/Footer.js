@@ -11,7 +11,8 @@ const Footer = () => {
                 <a href="https://github.com/ampersand-paris"><img className="icon-footer icon-padding" src="./Images/GitHub.png" /></a>
                 <a href="https://linkedin.com/ampersand-paris"><img className="icon-footer icon-padding" src="./Images/LinkedInWhite.svg" /></a>
             </div>
-            <p className="white">Designed and Developed by Ampersand Paris</p>
+            <p className="white text-al-center">Designed and Developed by 
+            <br></br>Ampersand Paris</p>
         </div>
     )
 }

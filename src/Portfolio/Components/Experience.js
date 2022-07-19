@@ -58,14 +58,14 @@ const Experience = () => {
             <div className="stnd-padding full-height flex column al-center just-center bg-bright-red">
                 <div className="white-border border-radius text-padding text-width bg-white experience-height">
                     <h1 className="bright-red sub-title opacity-80 no-space">Experience</h1>
-                    <div className="flex w-one-hundred">
-                        <div className="flex column">
+                    <div className="flex w-one-hundred mobile-column">
+                        <div className="flex column ">
                             <div className="flex">
                                 <div  onClick={toggleFSDS} className="border-right tab-padding twenty tab">
                                     <p className="no-margin">FAILSPACE Design Services</p>  
                                 </div> 
                                 <div style={arrowTopHover} className="flex al-center">
-                                    <img className="triangle" src="./Images/Triangle.png" />
+                                    <img className="triangle mobile-triangle-tab" src="./Images/Triangle.png" />
                                 </div>
                             </div>
                             <div className="flex">
@@ -74,7 +74,7 @@ const Experience = () => {
                                     <p className="no-margin">General Assembly</p>   
                                 </div>
                                 <div style={arrowBottomHover} className="flex al-center">
-                                    <img className="triangle" src="./Images/Triangle.png" />
+                                    <img className="triangle mobile-triangle-tab" src="./Images/Triangle.png" />
                                 </div>
                             </div>  
                         </div>      

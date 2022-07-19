@@ -24,11 +24,14 @@ function App() {
 
   const toggleLeftMenu = () => {
     document.getElementById('left-menu').classList.toggle('open-left-menu')
-
+    document.getElementById('left-open').classList.toggle('left-menu-triangle-open-animation')
+    document.getElementById('left-close').classList.toggle('left-menu-triangle-close-animation')
   }
 
   const toggleRightMenu = () => {
     document.getElementById('right-menu').classList.toggle('open-right-menu')
+    document.getElementById('right-open').classList.toggle('right-menu-triangle-open-animation')
+    document.getElementById('right-close').classList.toggle('right-menu-triangle-close-animation')
   }
 
   function reducer (state, action) {

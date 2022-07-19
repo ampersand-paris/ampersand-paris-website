@@ -4,8 +4,8 @@ import React from "react";
 const About = () => {
 
     return (
-            <div className="stnd-padding full-height flex column al-center just-center bg-bright-red">
-                <a id="about"></a>
+            <div className="stnd-padding full-height mobile-h-one-hundred flex column al-center just-center bg-bright-red">
+                <a id="about stnd-padding"></a>
                 <div className="red-border border-radius text-padding text-width">
                     <p className="white no-space">Hello, my name is</p>
                     <h1 className="white no-space">Ampersand Paris.</h1>
