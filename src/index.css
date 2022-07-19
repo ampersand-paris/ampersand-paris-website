@@ -164,6 +164,9 @@ a:link {
   font-weight: 600 !important;
 }
 
+.cursor {
+  cursor: pointer;
+}
 /* === ALIGNMENT === */
 
 .txt-al-right {
