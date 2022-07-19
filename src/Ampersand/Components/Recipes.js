@@ -112,14 +112,14 @@ const Recipes = () => {
             <div className="stnd-padding flex column al-center just-center">
                 <div className="border-radius text-padding seventy-five">
                     <h1 className="bright-red no-space">Recipes</h1>
-                    <div className="flex w-one-hundred">
+                    <div className="flex w-one-hundred mobile-column">
                         <div className="flex column">
                             <div className="flex">
                                 <div  onClick={toggleFennelFullDish} className="border-right tab-padding twenty tab">
                                     <p className="no-margin">Pickled Fennel Stalks and Kumquats Over White Beans, Fennel, Blood Orange, and Kalamata Olives</p>  
                                 </div> 
                                 <div style={arrowOneDisplay} className="flex al-center">
-                                    <img className="triangle" src="./Images/Triangle.png" />
+                                    <img className="triangle mobile-triangle-tab" src="./Images/Triangle.png" />
                                 </div>
                             </div>
                             <div className="flex">
@@ -128,7 +128,7 @@ const Recipes = () => {
                                     <p className="no-margin">Pickled Fennel Stalks and Kumquats</p>   
                                 </div>
                                 <div style={arrowTwoDisplay} className="flex al-center">
-                                    <img className="triangle" src="./Images/Triangle.png" />
+                                    <img className="triangle mobile-triangle-tab" src="./Images/Triangle.png" />
                                 </div>
                             </div>  
                             <div className="flex">
@@ -137,7 +137,7 @@ const Recipes = () => {
                                     <p className="no-margin">Oatmeal Two Ways</p>   
                                 </div>
                                 <div style={arrowThreeDisplay} className="flex al-center">
-                                    <img className="triangle" src="./Images/Triangle.png" />
+                                    <img className="triangle mobile-triangle-tab" src="./Images/Triangle.png" />
                                 </div>
                             </div>  
                             <div className="flex">
@@ -146,7 +146,7 @@ const Recipes = () => {
                                     <p className="no-margin">Mid-Process Cocktail</p>   
                                 </div>
                                 <div style={arrowFourDisplay} className="flex al-center">
-                                    <img className="triangle" src="./Images/Triangle.png" />
+                                    <img className="triangle mobile-triangle-tab" src="./Images/Triangle.png" />
                                 </div>
                             </div>  
                         </div>      

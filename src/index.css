@@ -527,14 +527,21 @@ body {
   min-height: 50vH;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
 /* ====== HEIGHT ====== */
 
+.height-150px {
+  height: 250px;
+}
 
 /* ====== WIDTH ====== */
 
 .fifty-percent {
+  width: 100%;
+}
+
+.seventy-percent {
   width: 100%;
 }
 
@@ -545,6 +552,11 @@ body {
 .text-width {
   width: 70vW;
 }
+
+.twenty {
+  width: 65vW;
+}
+
 /* ====== PADDING ====== */
 
 .footer-padding {
@@ -592,18 +604,19 @@ body {
 }
 
 .portfolio-image {
-  border-radius: 10px;
-  top: 0;
   width: 75vW;
   height: 43.125vW;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .portfolio-image-overlay {
   display: none;
 }
 
+/* ====== PROJECTS ====== */
+
+.mobile-triangle-tab {
+  transform: rotate(180deg) !important;
+}
 /* ====== FOOTER ====== */
 
 .icon-footer{
