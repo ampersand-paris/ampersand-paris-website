@@ -15,7 +15,7 @@ const Portfolio = () => {
             <div className="red-border border-radius text-padding seventy-five">
                 <h1 className="white no-space">Portfolio</h1>
             </div>   
-            <div className="seventy-five relative">
+            <div className="seventy-five relative mobile-flex mobile-column-reverse">
                 <div className="portfolio-text relative z-index-100">
                     <h3 className="white portfolio-title"><span className="opacity-80">Featured Project |</span> FAILSPACE</h3>
                     <div className="bg-white  border-radius text-padding">
@@ -31,12 +31,12 @@ const Portfolio = () => {
                         <a href="https://failspacenyc.com"><img className="icon icon-padding" src="./Images/ExternalLink.png" /></a>
                     </div>
                 </div>
-                <div style={{ backgroundImage: `url(${failspaceBackground})` }} className="portfolio-image absolute right" id="failspace">
+                <div style={{ backgroundImage: `url(${failspaceBackground})` }} className="portfolio-image absolute mobile-relative right" id="failspace">
                     <div className="portfolio-image-overlay">
                     </div>
                 </div>
             </div>
-            <div className="seventy-five relative top-padding flex flex-end">
+            <div className="seventy-five relative top-padding flex flex-end mobile-flex mobile-column-reverse">
                 <div className="portfolio-text relative z-index-100">
                     <h3 className="white portfolio-title txt-al-right"><span className="opacity-80">Featured Project |<br></br></span> You Can Cook Literally Anything</h3>
                     <div className="bg-white border-radius text-padding">
@@ -53,12 +53,12 @@ const Portfolio = () => {
                         <a href="https://ycclav2.herokuapp.com/"><img className="icon icon-padding" src="./Images/ExternalLink.png" /></a>
                     </div>
                 </div>
-                <div style={{ backgroundImage: `url(${YCCLABackground})` }} className="portfolio-image absolute left" id="failspace">
+                <div style={{ backgroundImage: `url(${YCCLABackground})` }} className="portfolio-image absolute mobile-relative left" id="failspace">
                     <div className="portfolio-image-overlay">
                     </div>
                 </div>
             </div>
-            <div className="seventy-five relative top-padding">
+            <div className="seventy-five relative top-padding mobile-flex mobile-column-reverse">
                 <div className="portfolio-text relative z-index-100">
                     <h3 className="white portfolio-title"><span className="opacity-80">Featured Project |</span> PRIORI</h3>
                     <div className="bg-white  border-radius text-padding">
@@ -75,13 +75,13 @@ const Portfolio = () => {
                         <a href="https://ycclav2.herokuapp.com/"><img className="icon icon-padding" src="./Images/ExternalLink.png" /></a>
                     </div>
                 </div>
-                <div style={{ backgroundImage: `url(${PRIORIBackground})` }} className="portfolio-image absolute right" id="failspace">
+                <div style={{ backgroundImage: `url(${PRIORIBackground})` }} className="portfolio-image absolute mobile-relative right" id="failspace">
                     <div className="portfolio-image-overlay">
 
                     </div>
                 </div>
             </div>
-            <div className="seventy-five relative top-padding flex flex-end">
+            <div className="seventy-five relative top-padding flex flex-end mobile-flex mobile-column-reverse">
                 <div className="portfolio-text relative z-index-100">
                     <h3 className="white portfolio-title txt-al-right"><span className="opacity-80">Featured Project |</span> Reaxion</h3>
                     <div className="bg-white border-radius text-padding">
@@ -96,12 +96,12 @@ const Portfolio = () => {
                         <a href="https://github.com/robyngoodner/Reaxion"><img className="icon icon-padding-first" src="./Images/GitHub.png" /></a>
                     </div>
                 </div>
-                <div style={{ backgroundImage: `url(${reaxionBackground})` }} className="portfolio-image absolute left" id="failspace">
+                <div style={{ backgroundImage: `url(${reaxionBackground})` }} className="portfolio-image absolute mobile-relative left" id="failspace">
                     <div className="portfolio-image-overlay">
                     </div>
                 </div>
             </div>
-            <div className="seventy-five relative top-padding">
+            <div className="seventy-five relative top-padding mobile-flex mobile-column-reverse">
                 <div className="portfolio-text relative z-index-100">
                     <h3 className="white portfolio-title"><span className="opacity-80">Featured Project |</span> BUNBUNS</h3>
                     <div className="bg-white  border-radius text-padding">
@@ -119,7 +119,7 @@ const Portfolio = () => {
                         <a href="https://bunbun-seirfx119.herokuapp.com/"><img className="icon icon-padding" src="./Images/ExternalLink.png" /></a>
                     </div>
                 </div>
-                <div style={{ backgroundImage: `url(${bunbunsBackground})` }} className="portfolio-image absolute right" id="failspace">
+                <div style={{ backgroundImage: `url(${bunbunsBackground})` }} className="portfolio-image absolute mobile-relative right" id="failspace">
                     <div className="portfolio-image-overlay">
 
                     </div>
