@@ -11,14 +11,19 @@ import Experience from "./Components/Experience";
 
 const Coding = (props) => {
 
+    const baseURL = 'http://ampersand.paris';
+
     useEffect(() => {
-        if(window.location.href === "http://localhost:3000/about#experience") {
+        if(window.location.href === `${baseURL}/about#experience`) {
             document.getElementById("experience").scrollIntoView({ behavior: 'smooth' });
         }
-        if(window.location.href === "http://localhost:3000/about#skills") {
+        if(window.location.href === `${baseURL}/about#skills`) {
             document.getElementById("skills").scrollIntoView({ behavior: 'smooth' });
         }
-        if(window.location.href === "http://localhost:3000/about#portfolio") {
+        if(window.location.href === `${baseURL}/about#portfolio`) {
+            document.getElementById("portfolio").scrollIntoView({ behavior: 'smooth' });
+        }
+        if(window.location.href === `${baseURL}/about#experience`) {
             document.getElementById("portfolio").scrollIntoView({ behavior: 'smooth' });
         }
     }  

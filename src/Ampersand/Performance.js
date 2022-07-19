@@ -11,17 +11,19 @@ import Writings from "./Components/Writings";
 
 const Performance = (props) => {
 
+    const baseURL = 'http://ampersand.paris';
+
     useEffect(() => {
-        if(window.location.href === "http://localhost:3000/ampersand#CSA") {
+        if(window.location.href === `${baseURL}/ampersand#CSA`) {
             document.getElementById("CSA").scrollIntoView({ behavior: 'smooth' });
         }
-        if(window.location.href === "http://localhost:3000/ampersand#recipes") {
+        if(window.location.href === `${baseURL}/ampersand#recipes`) {
             document.getElementById("recipes").scrollIntoView({ behavior: 'smooth' });
         }
-        if(window.location.href === "http://localhost:3000/ampersand#projects") {
+        if(window.location.href === `${baseURL}/ampersand#projects`) {
             document.getElementById("projects").scrollIntoView({ behavior: 'smooth' });
         }
-        if(window.location.href === "http://localhost:3000/ampersand#writings") {
+        if(window.location.href === `${baseURL}/ampersand#writings`) {
             document.getElementById("writings").scrollIntoView({ behavior: 'smooth' });
         }
     }  

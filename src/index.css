@@ -585,11 +585,15 @@ body {
   /* ====== FONTS ====== */
 
 h1 {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .circles {
   padding-left: 4vw !important;
+}
+
+.sub-title {
+  font-size: 1.25em;
 }
 /* ====== HEIGHT ====== */
 
