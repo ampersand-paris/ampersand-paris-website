@@ -1,5 +1,15 @@
 /* ====== KEYFRAMES ====== */
 
+@keyframes triangleAppear {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}
+
+@keyframes triangleDisappear {
+  from {opacity: 100%;}
+  to {opacity: 0%;}
+}
+
 @keyframes openRightMenu {
   from {right: -200px;}
   to {right: 0px;}
@@ -9,6 +19,30 @@
 @keyframes openLeftMenu {
   from {left: -140px;}
   to {left: 0px;}
+}
+
+@keyframes portfolio {
+  0% {
+    background-color: var(--light-blue);
+    opacity: 70%;
+  }
+  25% {
+    background-color: var(--bright-red);
+  }
+  100%{
+    opacity: 0%;
+  }
+}
+
+@keyframes portfolioOut {
+  0% {
+    opacity: 0%;
+    
+  }
+  100%{
+    background-color: var(--light-blue);
+    opacity: 70%;
+  }
 }
 
 /* ====== ANIMATIONS ====== */
@@ -21,6 +55,22 @@
   animation: openLeftMenu 1s forwards;
 }
 
+.left-menu-triangle-close-animation {
+  animation: triangleAppear 1s forwards;
+}
+
+.left-menu-triangle-open-animation {
+  animation: triangleDisappear 1s forwards;
+}
+
+
+.right-menu-triangle-close-animation {
+  animation: triangleAppear 1s forwards;
+}
+
+.right-menu-triangle-open-animation {
+  animation: triangleDisappear 1s forwards;
+}
 /* ====== COLORS ====== */
 
 :root {
@@ -101,6 +151,9 @@
   border-right: 2px solid var(--vermillion);
 }
 
+.vermillion-border-left {
+  border-left: 1px solid var(--vermillion);
+}
 
 /* ====== FONTS ====== */
 
@@ -121,7 +174,7 @@ ul {
 
 .circles {
   list-style-type: circle ;
-  padding-left: 4vw !important;
+  padding-left: 2vw !important;
 }
 
 h1 {
@@ -414,6 +467,15 @@ body {
   height: 30px;
 }
 
+.left-menu-triangle-close {
+  right: 0px;
+  top: 20px;
+  width: 20px;
+  height: 30px;
+  transform: rotate(180deg);
+  opacity: 0%;
+}
+
 .right-menu {
   position: fixed;
   right: -210px;
@@ -424,6 +486,14 @@ body {
   transform: rotate(180deg);
   width: 20px;
   height: 30px;
+}
+
+.right-menu-triangle-close {
+  top: 20px;
+  left: 0px;
+  width: 20px;
+  height: 30px;
+  opacity: 0%;
 }
 
 /* ====== AMPERSAND ====== */
@@ -450,29 +520,7 @@ body {
   background-repeat: no-repeat;
 }
 
-@keyframes portfolio {
-  0% {
-    background-color: var(--light-blue);
-    opacity: 70%;
-  }
-  25% {
-    background-color: var(--bright-red);
-  }
-  100%{
-    opacity: 0%;
-  }
-}
 
-@keyframes portfolioOut {
-  0% {
-    opacity: 0%;
-    
-  }
-  100%{
-    background-color: var(--light-blue);
-    opacity: 70%;
-  }
-}
 
 .portfolio-image-overlay {
   background-color: var(--light-blue);
@@ -540,6 +588,9 @@ h1 {
   font-size: 3em;
 }
 
+.circles {
+  padding-left: 4vw !important;
+}
 /* ====== HEIGHT ====== */
 
 .height-150px {

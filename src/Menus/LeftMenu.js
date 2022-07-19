@@ -46,6 +46,7 @@ const LeftMenu = (props) => {
     return (
         <div className="z-index h-one-hundred left-menu flex" id="left-menu">
             <div className="z-index relative menu-width h-one-hundred flex column just-center menu-side-padding white-border-right bg-bright-red cursor">
+                <img onClick={props.active} className="z-index absolute left-menu-triangle-close cursor" id="left-close" src="./Images/WhiteTriangle.svg" />       
                 <h3 className="sub-title absolute white opacity-80 ">Software Engineer</h3>
                 <div>
                     <h3 onClick={scrollAbout} className="white menu cursor">about</h3>
@@ -54,7 +55,7 @@ const LeftMenu = (props) => {
                     <h3 onClick={scrollExperience} className="white menu cursor">experience</h3>
                 </div>
             </div>
-            <img onClick={props.active} className="left-menu-triangle" src="./Images/WhiteTriangle.svg" />       
+            <img onClick={props.active} className="left-menu-triangle cursor" id="left-open" src="./Images/WhiteTriangle.svg" />       
         </div>
     )
 }
