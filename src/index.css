@@ -1,24 +1,41 @@
 /* ====== KEYFRAMES ====== */
 
 @keyframes triangleAppear {
-  from {opacity: 0%;}
-  to {opacity: 100%;}
+  from {
+    opacity: 0%;
+    display: none;}
+  to {
+    display: flex;
+    opacity: 100%;}
 }
 
 @keyframes triangleDisappear {
-  from {opacity: 100%;}
-  to {opacity: 0%;}
+  from {
+    opacity: 100%;
+    display: flex}
+  to {
+    opacity: 0%;
+    display: none;}
+}
+
+@keyframes closeRightMenu {
+  from {right: 0px;}
+  to {right: -210px;}
 }
 
 @keyframes openRightMenu {
-  from {right: -200px;}
+  from {right: -210px;}
   to {right: 0px;}
 }
 
-
 @keyframes openLeftMenu {
-  from {left: -140px;}
+  from {left: -210px;}
   to {left: 0px;}
+}
+
+@keyframes closeLeftMenu {
+  from {left: 0px;}
+  to {left: -210px;}
 }
 
 @keyframes portfolio {
@@ -37,7 +54,6 @@
 @keyframes portfolioOut {
   0% {
     opacity: 0%;
-    
   }
   100%{
     background-color: var(--light-blue);
@@ -51,8 +67,16 @@
   animation: openRightMenu 1s forwards;
 }
 
+.close-right-menu {
+  animation: closeRightMenu 1s forwards;
+}
+
 .open-left-menu {
   animation: openLeftMenu 1s forwards;
+}
+
+.close-left-menu {
+  animation: closeLeftMenu 1s forwards;
 }
 
 .left-menu-triangle-close-animation {
@@ -63,7 +87,6 @@
   animation: triangleDisappear 1s forwards;
 }
 
-
 .right-menu-triangle-close-animation {
   animation: triangleAppear 1s forwards;
 }
@@ -71,6 +94,7 @@
 .right-menu-triangle-open-animation {
   animation: triangleDisappear 1s forwards;
 }
+
 /* ====== COLORS ====== */
 
 :root {
@@ -465,6 +489,7 @@ body {
   margin-top: 20px;
   width: 20px;
   height: 30px;
+  transition-duration: 1s;
 }
 
 .left-menu-triangle-close {
@@ -474,6 +499,7 @@ body {
   height: 30px;
   transform: rotate(180deg);
   opacity: 0%;
+  transition-duration: 1s;
 }
 
 .right-menu {
