@@ -1,6 +1,6 @@
 /* === React Elements === */
 import React from "react";
-import MailchimpFormContainer from "./Mailchimp";
+import MailchimpFormContainer from "./Mailchimp/Mailchimp";
 
 const Footer = () => {
 

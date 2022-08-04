@@ -30,7 +30,7 @@ const CustomForm = ({ status, message, onValidated }) => {
 
     return (
         <form 
-            className="mc__form"
+            className=""
             onSubmit={(e) => handleSubmit(e)}
         >
             <div className="flex just-center">
@@ -43,26 +43,26 @@ const CustomForm = ({ status, message, onValidated }) => {
             </div>
 
             {status === "sending" && (
-                <div className="flex just-center">
+                <div className="flex just-center white">
                     <p>sending...</p>
                 </div>
             )}
 
             {status === "error" && (
-                <div className="flex just-center"
+                <div className="flex just-center white nasalization"
                     dangerouslySetInnerHTML={{ __html: message }}
                 />
             )}
 
             {status === "success" && (
                 <div
-                className="flex just-center"
+                className="flex just-center white nasalization"
                 dangerouslySetInnerHTML={{ __html: message }}
                 />
             )}
 
             {status !== "success" ? (
-                <div className="flex space-btwn">
+                <div className="flex mobile-column just-center space-btwn">
                     <input 
                         label="First Name"
                         onChange={e => setFirstName(e.target.value)}
