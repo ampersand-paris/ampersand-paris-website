@@ -35,7 +35,7 @@ function App() {
     let closeTriangleOpposite = document.getElementById('right-close');
 
 
-    if (window.length < 600){
+    if (window.innerWidth < 600){
       if(rightMenu.classList.contains('open-right-menu')){
         rightMenu.classList.remove('open-right-menu');
         rightMenu.classList.add('close-right-menu');
@@ -96,7 +96,7 @@ function App() {
     let openTriangleOpposite = document.getElementById('left-open');
     let closeTriangleOpposite = document.getElementById('left-close');
 
-    if (window.length < 600){
+    if (window.innerWidth < 600){
       if(leftMenu.classList.contains('open-left-menu')){
         leftMenu.classList.remove('open-left-menu');
         leftMenu.classList.add('close-left-menu');
