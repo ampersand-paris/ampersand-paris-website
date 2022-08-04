@@ -1,5 +1,6 @@
 /* === React Elements === */
 import React from "react";
+import MailchimpFormContainer from "./Mailchimp";
 
 const Footer = () => {
 
@@ -11,6 +12,7 @@ const Footer = () => {
                 <a href="https://github.com/ampersand-paris"><img className="icon-footer icon-padding" src="./Images/GitHub.png" /></a>
                 <a href="https://www.linkedin.com/in/ampersand-paris/"><img className="icon-footer icon-padding" src="./Images/LinkedInWhite.svg" /></a>
             </div>
+            <MailchimpFormContainer />
             <p className="white text-al-center">Designed and Developed by 
             <br></br>Ampersand Paris</p>
         </div>
