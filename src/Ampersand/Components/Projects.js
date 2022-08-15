@@ -22,7 +22,7 @@ const Fermentorship = () => {
                         <p className="tech-padding-first">Recipe Development</p>
                     </div>
                     <div className="flex no-space">
-                        <a href="https://www.kickstarter.com/projects/youcancook/you-can-cook-literally-anything"><img className="icon icon-padding" src="./Images/BrightRedExternalLink.svg" /></a>
+                        <a href="https://www.yccla.com/"><img className="icon icon-padding" src="./Images/BrightRedExternalLink.svg" /></a>
                         <a href="https://www.instagram.com/youcancookliterallyanything/"><img className="icon icon-padding-first" src="./Images/BrightRedInstagram.svg" /></a>
                     </div>
                 </div>

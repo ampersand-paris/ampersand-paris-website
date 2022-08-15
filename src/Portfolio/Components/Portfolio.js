@@ -50,7 +50,7 @@ const Portfolio = () => {
                     </div>
                     <div className="flex flex-end no-space">
                         <a href="https://github.com/ampersand-paris/YCCLAv2"><img className="icon icon-padding-first" src="./Images/GitHub.png" /></a>
-                        <a href="https://ycclav2.herokuapp.com/"><img className="icon icon-padding" src="./Images/ExternalLink.png" /></a>
+                        <a href="https://www.yccla.com/"><img className="icon icon-padding" src="./Images/ExternalLink.png" /></a>
                     </div>
                 </div>
                 <div style={{ backgroundImage: `url(${YCCLABackground})` }} className="portfolio-image absolute mobile-relative left" id="failspace">
