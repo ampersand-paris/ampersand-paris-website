@@ -390,7 +390,7 @@ body {
 }
 
 .full-width {
-  width: 100vW;
+  width: 100%;
 }
 
 .seventy-five {
@@ -588,6 +588,9 @@ body {
   border-radius: 30px;
 }
 
+.half-half-gradient {
+  background: linear-gradient(90deg, var(--bright-red) 0%, var(--bright-red) 50%, white 50%, white 100%)
+}
 /* ====== PORTFOLIO ====== */
 
 .portfolio-image {
