@@ -15,8 +15,8 @@ import Performance from "./Ampersand/Performance";
 
 function App() {
   
-  const [whiteBackground, setWhiteBackground] = useState('50vW');  
-  const [redBackground, setRedBackground] = useState('50vW'); 
+  const [whiteBackground, setWhiteBackground] = useState('50%');  
+  const [redBackground, setRedBackground] = useState('50%'); 
 
   // For future development
   // const[rightOpacity, setRightOpacity] = useState('');
