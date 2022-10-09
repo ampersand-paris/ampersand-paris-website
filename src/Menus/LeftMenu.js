@@ -47,7 +47,7 @@ const LeftMenu = (props) => {
         <div className="z-index h-one-hundred left-menu flex" id="left-menu">
             <div className="z-index relative menu-width h-one-hundred flex column just-center menu-side-padding white-border-right bg-bright-red cursor">
                 <img onClick={props.active} className="z-index absolute left-menu-triangle-close cursor" id="left-close" src="./Images/WhiteTriangle.png" />       
-                <h3 className="sub-title absolute white opacity-80 ">Software Engineer</h3>
+                <h3 className="sub-title absolute white opacity-80 ">UX/UI Engineer</h3>
                 <div>
                     <h3 onClick={scrollAbout} className="white menu cursor">about</h3>
                     <h3 onClick={scrollSkills} className="white menu cursor">skills</h3>

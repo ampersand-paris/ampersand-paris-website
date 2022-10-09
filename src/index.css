@@ -290,6 +290,7 @@ input[type='submit']:hover {
 
 .portfolio-title {
   font-size: 1.5em;
+  width: 75%;
 }
 
 .opacity-80 {
@@ -299,6 +300,10 @@ input[type='submit']:hover {
 .uppercase {
   text-transform: uppercase;
   font-weight: 600 !important;
+}
+
+.all-caps {
+  text-transform: uppercase;
 }
 
 .cursor {
@@ -370,6 +375,10 @@ body {
 
 .flex-end {
   justify-content: flex-end;
+}
+
+.ai-flex-end {
+  align-items: flex-end;
 }
 
 .space-btwn {
@@ -766,6 +775,10 @@ h1 {
 
 .portfolio-image-overlay {
   display: none;
+}
+
+.portfolio-title {
+  width: 100%;
 }
 
 /* ====== PROJECTS ====== */

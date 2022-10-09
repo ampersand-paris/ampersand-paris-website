@@ -32,7 +32,7 @@ const Fermentorship = () => {
                 </div>
             </div>
             <div className="seventy-five relative top-padding flex flex-end mobile-flex mobile-column-reverse">
-                <div className="portfolio-text relative z-index-100">
+                <div className="portfolio-text relative flex column ai-flex-end z-index-100">
                     <h3 className="bright-red portfolio-title txt-al-right">Fermentorship</h3>
                     <div className="bg-bright-red border-radius text-padding">
                         <p className="white txt-al-right">An intimate two-week long workshop facilitated by Ampersand for five non-cis (trans, gender-nonconforming, non-binary, two-spirit, and beyond) folx. The cohort meets over the course of the two-weeks for three masterclasses: kombucha fermentation, bottling and scoby textiles, and self-portraiture. In between these gatherings, the cohort recieves daily journaling prompts on relating to microecologies and integrating their wisdom into their own lives and creative processes. Each cohort member exits the workshop with two-liters of kombucha, a self-portrait, knowledge of both fermentation and vegan leather craft, and a deepened relationship to each other and their microbial kin.</p>
