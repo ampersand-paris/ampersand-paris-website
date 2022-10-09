@@ -116,7 +116,7 @@ const Recipes = () => {
                         <div className="flex column">
                             <div className="flex">
                                 <div  onClick={toggleFennelFullDish} className="border-right tab-padding twenty tab">
-                                    <p className="no-margin">Pickled Fennel Stalks and Kumquats Over White Beans, Fennel, Blood Orange, and Kalamata Olives</p>  
+                                    <p className="no-margin cursor">Pickled Fennel Stalks and Kumquats Over White Beans, Fennel, Blood Orange, and Kalamata Olives</p>  
                                 </div> 
                                 <div style={arrowOneDisplay} className="flex al-center">
                                     <img className="triangle mobile-triangle-tab" src="./Images/Triangle.png" />
@@ -125,7 +125,7 @@ const Recipes = () => {
                             <div className="flex">
                                 <div onClick={togglePickledFennelStalks} 
                                     className="border-right tab-padding twenty tab">
-                                    <p className="no-margin">Pickled Fennel Stalks and Kumquats</p>   
+                                    <p className="no-margin cursor">Pickled Fennel Stalks and Kumquats</p>   
                                 </div>
                                 <div style={arrowTwoDisplay} className="flex al-center">
                                     <img className="triangle mobile-triangle-tab" src="./Images/Triangle.png" />
@@ -134,7 +134,7 @@ const Recipes = () => {
                             <div className="flex">
                                 <div onClick={toggleOatmealTwoWays} 
                                     className="border-right tab-padding twenty tab">
-                                    <p className="no-margin">Oatmeal Two Ways</p>   
+                                    <p className="no-margin cursor">Oatmeal Two Ways</p>   
                                 </div>
                                 <div style={arrowThreeDisplay} className="flex al-center">
                                     <img className="triangle mobile-triangle-tab" src="./Images/Triangle.png" />
@@ -143,7 +143,7 @@ const Recipes = () => {
                             <div className="flex">
                                 <div onClick={toggleMidProcess} 
                                     className="border-right tab-padding twenty tab">
-                                    <p className="no-margin">Mid-Process Cocktail</p>   
+                                    <p className="no-margin cursor">Mid-Process Cocktail</p>   
                                 </div>
                                 <div style={arrowFourDisplay} className="flex al-center">
                                     <img className="triangle mobile-triangle-tab" src="./Images/Triangle.png" />

@@ -62,7 +62,7 @@ const Experience = () => {
                         <div className="flex column ">
                             <div className="flex">
                                 <div  onClick={toggleFSDS} className="border-right tab-padding twenty tab">
-                                    <p className="no-margin">FAILSPACE Design Services</p>  
+                                    <p className="no-margin cursor">FAILSPACE Design Services</p>  
                                 </div> 
                                 <div style={arrowTopHover} className="flex al-center">
                                     <img className="triangle mobile-triangle-tab" src="./Images/Triangle.png" />
@@ -71,7 +71,7 @@ const Experience = () => {
                             <div className="flex">
                                 <div onClick={toggleGA} 
                                     className="border-right tab-padding twenty tab">
-                                    <p className="no-margin">General Assembly</p>   
+                                    <p className="no-margin cursor">General Assembly</p>   
                                 </div>
                                 <div style={arrowBottomHover} className="flex al-center">
                                     <img className="triangle mobile-triangle-tab" src="./Images/Triangle.png" />
