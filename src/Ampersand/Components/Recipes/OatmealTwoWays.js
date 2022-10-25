@@ -42,7 +42,7 @@ const OatmealTwoWays = (props) => {
                                 <li>Nut milk bag</li>
                             </ul>
                         </div>
-                        <div className="flex">
+                        <div className="flex mobile-column">
                             <div className="fifty-percent">
                                 <ul>
                                     <li>For savory toppings:</li>
@@ -76,7 +76,7 @@ const OatmealTwoWays = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className="flex">
+                <div className="flex mobile-column">
                     <div className="twenty-five-percent">
                         <h3>RECIPE NOTES</h3>
                         <p>*The oatmeal blend is enough for 16 servings. The savory toppings are enough for 4 servings, and the sweet 8 servings. As you make your way through the oatmeal blend, choose and prepare your toppings in advance and enjoy throughout the week. A little bit of prep work can make the rest of the week seamless.</p>
