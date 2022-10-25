@@ -704,6 +704,10 @@ h1 {
 }
 /* ====== HEIGHT ====== */
 
+.experience-height  {
+  height: 100%;
+}
+
 .height-150px {
   height: 100%;
   padding-bottom: 20px;
@@ -773,6 +777,13 @@ h1 {
   position: relative;
 }
 
+/* ====== BORDERS ====== */
+
+.mobile-border-bottom {
+  border-right: none;
+  border-bottom: 1px solid var(--bright-red)
+}
+
 /* ====== HOME ====== */
 
 .ampersand {
@@ -801,8 +812,6 @@ h1 {
 .portfolio-title {
   width: 100%;
 }
-
-/* ====== PROJECTS ====== */
 
 .mobile-triangle-tab {
   transform: rotate(180deg) !important;

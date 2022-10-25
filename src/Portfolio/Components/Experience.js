@@ -55,7 +55,7 @@ const Experience = () => {
     return (
         <>
             <a id="experience"></a>
-            <div className="stnd-padding full-height flex column al-center just-center bg-bright-red">
+            <div className="stnd-padding full-height flex column al-center just-center bg-bright-red mobile-h-one-hundred">
                 <div className="white-border border-radius text-padding text-width bg-white experience-height">
                     <h1 className="bright-red sub-title opacity-80 no-space">Experience</h1>
                     <div className="flex w-one-hundred mobile-column">
