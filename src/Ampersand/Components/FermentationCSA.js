@@ -5,7 +5,7 @@ const FermentationCSA = () => {
             <a id="CSA"></a>
             <div class="stnd-padding flex column al-center just-center">
                 <div class="border-radius text-width">
-                    <h1 className="bright-red sub-title">fermentation CSA</h1>
+                    <h1 className="bright-red no-space">fermentation CSA</h1>
                     <h2 className="bright-red opacity-80 no-space">what is a csa?</h2>
                     <p className="no-space">CSA (Community Supported Agriculture) is an agricultural model that connects the farmer and consumer directly. CSA Members often will purchase a share of the future harvest at the beginning of the growing season. As farmers harvest throughout the season, members receive their weekly share of fruits and vegetables from the farmer directly.</p>
                     <p>This model helps the farmers economically at the time of investment and invites the community to witness and respond to their local agricultural ecology. The genius and innovation for this agricultural lineage, like many other regenerative and sustainable agricultural practices, are rooted in Black and Indeginous peoples. Booker T. Whatley, a Tuskegee University professor, popularized this subscription based buyer’s club for small farmers as a technology to generate an agrarian Black middle class. Listening to the words of Leah Penniman of Soul Fire Farm connected me to this history. These technologies that are going to save us are not free.</p>

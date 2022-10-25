@@ -45,11 +45,11 @@ const RightMenu = (props) => {
     }
 
     const scrollWritings = () => {
-        if (window.location.href.indexOf("ampersand") > -1) {
+        if (window.location.href.indexOf("creative") > -1) {
             const element = document.getElementById("writings");
             element.scrollIntoView({ behavior: 'smooth' });
         } else {
-            window.location.href = `${baseURL}/ampersand#writings`
+            window.location.href = `${baseURL}/creative#writings`
         }
     }
     
@@ -62,8 +62,8 @@ const RightMenu = (props) => {
                 <h3 onClick={scrollAmpersand} className="bright-red menu cursor">ampersand</h3>
                 <h3 onClick={scrollCSA} className="bright-red menu cursor">fermentation CSA</h3>
                 <h3 onClick={scrollProjects} className="bright-red menu cursor">projects</h3>
+                <h3 onClick={scrollWritings} className="bright-red menu cursor">writings</h3>
                 <h3 onClick={scrollRecipes} className="bright-red menu cursor">recipes</h3>
-                {/* <h3 onClick={scrollWritings} className="bright-red menu cursor">writings</h3> */}
             </div>
         </div>
 

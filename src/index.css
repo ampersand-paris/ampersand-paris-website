@@ -167,6 +167,10 @@
   border-left: 1px solid var(--bright-red);
 }
 
+.red-border-right {
+  border-right: 1px solid var(--bright-red);
+}
+
 .white-border {
   border: 1px solid var(--white);
 }
@@ -233,6 +237,10 @@ a:link {
   text-decoration: none !important;
 }
 
+a:hover {
+  color: var(--light-blue)
+}
+
 input {
   background-color: transparent;
   border-radius: 5px;
@@ -293,6 +301,14 @@ input[type='submit']:hover {
   width: 75%;
 }
 
+.writing-title {
+  font-size: 2em;
+  padding: 2vH 1vW 2vH 0vW;
+}
+
+.writing-details {
+  padding: 2vH 1vW 0vH 1vW;
+}
 .opacity-80 {
   opacity: 80%;
 }
