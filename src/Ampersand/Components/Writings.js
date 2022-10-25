@@ -6,8 +6,8 @@ const Writings = () => {
             <div class="seventy-five full-height flex column just-center">
 	            <h1 className="bright-red no-space">Writings</h1>
                 <div className="flex relative z-index-100">
-                    <div className="flex">
-                        <div className="fifty-percent flex column red-border-right">
+                    <div className="flex mobile-column">
+                        <div className="fifty-percent flex column red-border-right mobile-border-bottom">
                             <h2 className="writing-title bright-red ">A Field Guide to Lacto-Fermentation in Four Lessons</h2>
                             <div className="flex no-space">
                                 <p className="tech-padding-first">Fermentation</p>
