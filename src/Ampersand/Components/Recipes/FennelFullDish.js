@@ -35,7 +35,7 @@ const FennelFullDish = (props) => {
                 </div>
             </div>
             <div>
-                <div className="flex flex-end">
+                <div className="flex flex-end ">
                     <div className="seventy-percent">
                         <h3>ingredients</h3>
                         <ul>

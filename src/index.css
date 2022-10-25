@@ -705,7 +705,8 @@ h1 {
 /* ====== HEIGHT ====== */
 
 .height-150px {
-  height: 250px;
+  height: 100%;
+  padding-bottom: 20px;
 }
 
 .mobile-h-one-hundred {
@@ -717,6 +718,10 @@ h1 {
 }
 
 /* ====== WIDTH ====== */
+
+.twenty-five-percent {
+  width: 100%;
+}
 
 .fifty-percent {
   width: 100%;

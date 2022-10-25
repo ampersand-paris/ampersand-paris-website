@@ -23,7 +23,7 @@ const MidProcess = (props) => {
             <div className="height-150px flex column red-border-bottom">
                 <h2 className="uppercase">mid-process</h2>
                 <div>
-                    <p className="no-space">Makes: Makes: 2 cocktails</p>
+                    <p className="no-space">Makes: 2 cocktails</p>
                     <p className="no-space">Active Prep: 10 minutes</p> 
                 </div>
             </div>

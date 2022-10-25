@@ -34,10 +34,10 @@ const PickledFennelStalks = (props) => {
                 </div>
             </div>
             <div>
-                <div className="flex flex-end">
+                <div className="flex flex-end ">
                     <div className="seventy-percent">
                         <h3>ingredients</h3>
-                        <div class="flex space-btwn">
+                        <div class="flex space-btwn mobile-column">
                             <ul>
                                 <li>300 grams of fennel stalks</li>
                                 <li>150 grams of kumquats</li>
@@ -64,7 +64,7 @@ const PickledFennelStalks = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className="flex">
+                <div className="flex mobile-column">
                     <div className="twenty-five-percent">
                         <div>
                             <h3>RECIPE NOTES</h3>

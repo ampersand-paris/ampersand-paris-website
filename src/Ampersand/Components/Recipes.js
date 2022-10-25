@@ -6,6 +6,8 @@ import FennelFullDish from "./Recipes/FennelFullDish";
 import MidProcess from "./Recipes/MidProcess";
 import OatmealTwoWays from "./Recipes/OatmealTwoWays";
 import PickledFennelStalks from  "./Recipes/PickledFennelStalks"
+import HotToddy from "./Recipes/HotToddy"
+import BraisedPorkInPineapple from "./Recipes/BraisedPorkInPineapple"
 
 const Recipes = () => {
 
@@ -13,11 +15,16 @@ const Recipes = () => {
     const [pickledFennelStalks, setPickledFennelStalks] = useState('none')
     const [oatmealTwoWays, setOatmealTwoWays] = useState('none')
     const [midProcess, setMidProcess] = useState('none')
+    const [hotToddy, setHotToddy] = useState('none')
+    const [braisedPork, setBraisedPork] = useState('none')
+
 
     const [arrowOne, setArrowOne] = useState('flex')
     const [arrowTwo, setArrowTwo] = useState('none')
     const [arrowThree, setArrowThree] = useState('none')
     const [arrowFour, setArrowFour] = useState('none')
+    const [arrowFive, setArrowFive] = useState('none')
+    const [arrowSix, setArrowSix] = useState('none')
 
 
     const toggleFennelFullDish = () => {
@@ -26,11 +33,15 @@ const Recipes = () => {
         setPickledFennelStalks('none')
         setOatmealTwoWays('none')
         setMidProcess('none')
+        setBraisedPork('none')
+        setHotToddy('none')
         // Arrow
         setArrowOne('flex')
         setArrowTwo('none')
         setArrowThree('none')
         setArrowFour('none')
+        setArrowFive('none')
+        setArrowSix('none')
     }
 
     const togglePickledFennelStalks = () => {
@@ -39,11 +50,15 @@ const Recipes = () => {
         setPickledFennelStalks('flex')
         setOatmealTwoWays('none')
         setMidProcess('none')
+        setBraisedPork('none')
+        setHotToddy('none')
         // Arrow
         setArrowOne('none')
         setArrowTwo('flex')
         setArrowThree('none')
         setArrowFour('none')
+        setArrowFive('none')
+        setArrowSix('none')
     }
 
     const toggleOatmealTwoWays = () => {
@@ -52,11 +67,15 @@ const Recipes = () => {
         setPickledFennelStalks('none')
         setOatmealTwoWays('flex')
         setMidProcess('none')
+        setBraisedPork('none')
+        setHotToddy('none')
         // Arrow
         setArrowOne('none')
         setArrowTwo('none')
         setArrowThree('flex')
         setArrowFour('none')
+        setArrowFive('none')
+        setArrowSix('none')
     }
 
     const toggleMidProcess = () => {
@@ -65,12 +84,52 @@ const Recipes = () => {
         setPickledFennelStalks('none')
         setOatmealTwoWays('none')
         setMidProcess('flex')
+        setBraisedPork('none')
+        setHotToddy('none')
         // Arrow
         setArrowOne('none')
         setArrowTwo('none')
         setArrowThree('none')
         setArrowFour('flex')
+        setArrowFive('none')
+        setArrowSix('none')
     }
+
+    const toggleBraisedPork = () => {
+        // Recipe
+        setFennelFullDish('none')
+        setPickledFennelStalks('none')
+        setOatmealTwoWays('none')
+        setMidProcess('none')
+        setBraisedPork('flex')
+        setHotToddy('none')
+        // Arrow
+        setArrowOne('none')
+        setArrowTwo('none')
+        setArrowThree('none')
+        setArrowFour('none')
+        setArrowFive('flex')
+        setArrowSix('none')
+    }
+
+    const toggleHotToddy = () => {
+        // Recipe
+        setFennelFullDish('none')
+        setPickledFennelStalks('none')
+        setOatmealTwoWays('none')
+        setMidProcess('none')
+        setBraisedPork('none')
+        setHotToddy('flex')
+        // Arrow
+        setArrowOne('none')
+        setArrowTwo('none')
+        setArrowThree('none')
+        setArrowFour('none')
+        setArrowFive('none')
+        setArrowSix('flex')
+    }
+
+    
 
     // const arrowOne = () => {
     //     if(arrowTop === 'flex') {
@@ -104,6 +163,14 @@ const Recipes = () => {
 
     const arrowFourDisplay = {
         display: arrowFour
+    }
+
+    const arrowFiveDisplay = {
+        display: arrowFive
+    }
+
+    const arrowSixDisplay = {
+        display: arrowSix
     }
 
     return (
@@ -141,6 +208,15 @@ const Recipes = () => {
                                 </div>
                             </div>  
                             <div className="flex">
+                                <div onClick={toggleBraisedPork} 
+                                    className="border-right tab-padding twenty tab">
+                                    <p className="no-margin cursor">Sweet and Spicy Braised Pork in Pineapple</p>   
+                                </div>
+                                <div style={arrowFiveDisplay} className="flex al-center">
+                                    <img className="triangle mobile-triangle-tab" src="./Images/Triangle.png" />
+                                </div>
+                            </div> 
+                            <div className="flex">
                                 <div onClick={toggleMidProcess} 
                                     className="border-right tab-padding twenty tab">
                                     <p className="no-margin cursor">Mid-Process Cocktail</p>   
@@ -148,13 +224,24 @@ const Recipes = () => {
                                 <div style={arrowFourDisplay} className="flex al-center">
                                     <img className="triangle mobile-triangle-tab" src="./Images/Triangle.png" />
                                 </div>
-                            </div>  
+                            </div>
+                            <div className="flex">
+                                <div onClick={toggleHotToddy} 
+                                    className="border-right tab-padding twenty tab">
+                                    <p className="no-margin cursor">Hot Toddy</p>   
+                                </div>
+                                <div style={arrowSixDisplay} className="flex al-center">
+                                    <img className="triangle mobile-triangle-tab" src="./Images/Triangle.png" />
+                                </div>
+                            </div> 
                         </div>      
                         <div className="experience-width">
                             <FennelFullDish active={fennelFullDish} /> 
                             <PickledFennelStalks active={pickledFennelStalks} />
                             <OatmealTwoWays active={oatmealTwoWays} />
                             <MidProcess active={midProcess} />
+                            <HotToddy active={hotToddy} />
+                            <BraisedPorkInPineapple active={braisedPork} />
                         </div>
                     </div>
                 </div>
